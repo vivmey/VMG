@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Trustwave | World's Largest Independent MSSP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            font-size: 1.06rem;
+            font-weight: 300;
+            line-height: 1.594rem;
+            color: #fafafa;
+            background: #000;
+            overflow-x: hidden;
+        }
+
+        /* Top Announcement Bar */
+        .announcement-bar {
+            background: rgba(15, 15, 20, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1001;
+            transition: transform 0.3s ease;
+        }
+
+        .announcement-content {
+            max-width: 90rem;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.875rem;
+        }
+
+        .announcement-left {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .announcement-icon {
+            width: 1.25rem;
+            height: 1.25rem;
+            border: 2px solid #b10c2a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #b10c2a;
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+
+        .announcement-text {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .announcement-link {
+            color: #b10c2a;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .announcement-right {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .announcement-right a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .announcement-right a:hover {
+            color: #fff;
+        }
+
+        /* Header Navigation */
+        .header {
+            position: fixed;
+            top: 2.5rem;
+            left: 0;
+            right: 0;
+            background: transparent;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            background: rgba(15, 15, 20, 0.98);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            top: 0;
+            padding-top: 0.5rem;
+        }
+
+        .header-content {
+            max-width: 90rem;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 2rem;
+            height: 2rem;
+            background: #fff;
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+        }
+
+        .logo-subtitle {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 400;
+        }
+
+        .nav-center {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-center a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 400;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-center a::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #a6ecfc;
+            transition: width 0.3s ease;
+        }
+
+        .nav-center a:hover {
+            color: #a6ecfc;
+        }
+
+        .nav-center a:hover::after {
+            width: 100%;
+        }
+
+        .nav-center a.active {
+            color: #a6ecfc;
+        }
+
+        .nav-center a.active::after {
+            width: 100%;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .search-icon {
+            color: #fff;
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .search-icon:hover {
+            color: #a6ecfc;
+        }
+
+        .btn-secondary {
+            padding: 0.625rem 1.5rem;
+            background: transparent;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-primary {
+            padding: 0.625rem 1.5rem;
+            background: #a6ecfc;
+            color: #000;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: #8ae0f8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(166, 236, 252, 0.4);
+        }
+
+        /* Hero Section */
+        .about-hero {
+            position: relative;
+            min-height: 80vh;
+            padding: 10rem 2rem 6rem;
+            background: linear-gradient(135deg, #1a0a0f 0%, #2b0a1a 50%, #1a0a0f 100%);
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 30%, rgba(177, 12, 42, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(166, 236, 252, 0.15) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .about-hero-pattern {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background-image: radial-gradient(circle, rgba(177, 12, 42, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            z-index: 2;
+        }
+
+        .about-hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 90rem;
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+
+        .about-hero-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .about-hero-title {
+            font-size: 3.5rem;
+            font-weight: 300;
+            line-height: 4rem;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about-hero-title .highlight {
+            color: #a6ecfc;
+            font-weight: 400;
+        }
+
+        .about-hero-subtitle {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: #17191c;
+            padding: 5rem 2rem;
+        }
+
+        .stats-container {
+            max-width: 90rem;
+            margin: 0 auto;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-number {
+            font-size: 3.75rem;
+            font-weight: 200;
+            color: #fff;
+            line-height: 1;
+            margin-bottom: 0.75rem;
+        }
+
+        .stat-number .highlight {
+            color: #a6ecfc;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.4;
+        }
+
+        /* Mission Section */
+        .mission-section {
+            padding: 6rem 2rem;
+            background: #fafafa;
+        }
+
+        .mission-container {
+            max-width: 90rem;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .mission-left {
+            position: relative;
+        }
+
+        .mission-image-main {
+            width: 100%;
+            height: 500px;
+            border-radius: 50% 50% 0 0;
+            object-fit: cover;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .mission-card {
+            position: absolute;
+            bottom: -2rem;
+            right: -2rem;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 2rem 2.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            border-left: 4px solid #b10c2a;
+        }
+
+        .mission-card-number {
+            font-size: 3rem;
+            font-weight: 200;
+            color: #b10c2a;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .mission-card-label {
+            font-size: 0.95rem;
+            color: #333;
+            font-weight: 400;
+        }
+
+        .mission-right h2 {
+            font-size: 2.75rem;
+            font-weight: 300;
+            line-height: 3.4rem;
+            color: #000;
+            margin-bottom: 2rem;
+        }
+
+        .mission-right h2 .highlight {
+            color: #b10c2a;
+            font-weight: 400;
+        }
+
+        .mission-description {
+            font-size: 1.05rem;
+            line-height: 1.7rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        .mission-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin-bottom: 3rem;
+        }
+
+        .mission-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .mission-bullet {
+            width: 8px;
+            height: 8px;
+            background: #b10c2a;
+            border-radius: 50%;
+            margin-top: 0.5rem;
+            flex-shrink: 0;
+        }
+
+        .mission-text {
+            font-size: 1.05rem;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Values Section */
+        .values-section {
+            padding: 6rem 2rem;
+            background: #000;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .values-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 50% 50%, rgba(177, 12, 42, 0.1) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .values-container {
+            max-width: 90rem;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .values-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .values-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .values-title {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 3.8rem;
+            color: #fff;
+            margin-bottom: 1.5rem;
+        }
+
+        .values-description {
+            font-size: 1.1rem;
+            line-height: 1.8rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .value-card {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2b0a1a 100%);
+            padding: 3rem 2.5rem;
+            border-radius: 1rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(177, 12, 42, 0.1) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(177, 12, 42, 0.3);
+        }
+
+        .value-card:hover::before {
+            opacity: 1;
+        }
+
+        .value-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(166, 236, 252, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .value-icon svg {
+            width: 30px;
+            height: 30px;
+            stroke: #a6ecfc;
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .value-card-title {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #fff;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .value-card-description {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.8);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            padding: 6rem 2rem;
+            background: #fafafa;
+        }
+
+        .timeline-container {
+            max-width: 90rem;
+            margin: 0 auto;
+        }
+
+        .timeline-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .timeline-title {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 3.8rem;
+            color: #000;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-subtitle {
+            font-size: 1.1rem;
+            line-height: 1.8rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .timeline-list {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline-list::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, #b10c2a 0%, rgba(177, 12, 42, 0.3) 100%);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -6px;
+            top: 0.5rem;
+            width: 14px;
+            height: 14px;
+            background: #b10c2a;
+            border-radius: 50%;
+            border: 3px solid #fafafa;
+            z-index: 2;
+        }
+
+        .timeline-year {
+            font-size: 2rem;
+            font-weight: 300;
+            color: #b10c2a;
+            margin-bottom: 0.75rem;
+        }
+
+        .timeline-event-title {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #000;
+            margin-bottom: 0.75rem;
+        }
+
+        .timeline-event-description {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        /* Leadership Section */
+        .leadership-section {
+            padding: 6rem 2rem;
+            background: #17191c;
+        }
+
+        .leadership-container {
+            max-width: 90rem;
+            margin: 0 auto;
+        }
+
+        .leadership-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .leadership-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .leadership-title {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 3.8rem;
+            color: #fff;
+        }
+
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
+
+        .leader-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .leader-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .leader-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #2b1a1f 0%, #1a1d23 50%, #2b1a1f 100%);
+        }
+
+        .leader-info {
+            padding: 2rem;
+        }
+
+        .leader-name {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .leader-title {
+            font-size: 0.95rem;
+            color: #a6ecfc;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        .leader-bio {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .leader-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .leader-social-link {
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 0.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .leader-social-link:hover {
+            background: #a6ecfc;
+        }
+
+        .leader-social-link svg {
+            width: 18px;
+            height: 18px;
+            fill: #fff;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 2rem;
+            background: #fafafa;
+        }
+
+        .cta-container {
+            max-width: 90rem;
+            margin: 0 auto;
+        }
+
+        .cta-content {
+            background: linear-gradient(135deg, #2b1a1f 0%, #1a1d23 100%);
+            border-radius: 2rem;
+            padding: 5rem 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(177, 12, 42, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(166, 236, 252, 0.1) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .cta-inner {
+            position: relative;
+            z-index: 10;
+        }
+
+        .cta-title {
+            font-size: 2.75rem;
+            font-weight: 300;
+            line-height: 3.4rem;
+            color: #fff;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-description {
+            font-size: 1.1rem;
+            line-height: 1.8rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cta-button-primary {
+            padding: 0.875rem 2.5rem;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button-primary:hover {
+            background: #e0e0e0;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .cta-button-secondary {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s ease;
+        }
+
+        .cta-button-secondary:hover {
+            gap: 0.75rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #000;
+            padding: 4rem 2rem 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-main {
+            max-width: 90rem;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 380px 1fr;
+            gap: 0;
+        }
+
+        .footer-left {
+            padding-right: 4rem;
+        }
+
+        .footer-newsletter-title {
+            font-size: 2rem;
+            font-weight: 300;
+            color: #fff;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-newsletter-description {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+        }
+
+        .footer-newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .footer-input {
+            padding: 0.875rem 1.25rem;
+            border: 1.5px solid #b10c2a;
+            border-radius: 0.5rem;
+            font-family: 'Inter', Arial, sans-serif;
+            font-size: 0.95rem;
+            background: transparent;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .footer-input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .footer-input:focus {
+            outline: none;
+            border-color: #790016;
+        }
+
+        .footer-error-message {
+            font-size: 0.8rem;
+            color: #b10c2a;
+            margin: 0;
+            display: none;
+        }
+
+        .footer-subscribe-btn {
+            width: fit-content;
+            padding: 0.75rem 2.5rem;
+            background: #a6ecfc;
+            color: #000;
+            border: none;
+            border-radius: 1.5rem;
+            font-family: 'Inter', Arial, sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 0.5rem;
+        }
+
+        .footer-subscribe-btn:hover {
+            background: #8ae0f8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(166, 236, 252, 0.4);
+        }
+
+        .footer-right {
+            padding-left: 4rem;
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .footer-links-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-link {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #a6ecfc;
+        }
+
+        .footer-bottom {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .footer-social-link {
+            width: 42px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 0.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social-link:hover {
+            background: #a6ecfc;
+        }
+
+        .footer-social-link svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex: 1;
+        }
+
+        .footer-legal-link {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .footer-legal-link:hover {
+            color: #fff;
+        }
+
+        .footer-copyright {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .mission-container {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
+
+            .mission-card {
+                position: static;
+                margin-top: 2rem;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .leadership-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-hero-title {
+                font-size: 2.5rem;
+                line-height: 3rem;
+            }
+
+            .mission-right h2,
+            .values-title,
+            .timeline-title,
+            .leadership-title,
+            .cta-title {
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+
+            .values-grid,
+            .leadership-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .footer-left {
+                padding-right: 0;
+            }
+
+            .footer-right {
+                padding-left: 0;
+                border-left: none;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                padding-top: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <div class="announcement-left">
+                <span class="announcement-icon">!</span>
+                <span class="announcement-text">
+                    LevelBlue Completes Acquisition of Trustwave to Form the World's Largest Pure-Play MSSP.
+                    <a href="#" class="announcement-link">Learn More</a>
+                </span>
+            </div>
+            <div class="announcement-right">
+                <a href="#government">Government</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#login">Login</a>
+                <a href="#incident">Incident Response</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header" id="mainHeader">
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="/" class="logo">
+                    <div class="logo-icon"></div>
+                    <div>
+                        <div>Trustwave</div>
+                        <div class="logo-subtitle">A LevelBlue Company</div>
+                    </div>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-center">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#why" class="active">Why Trustwave</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <a href="#rfp" class="btn-secondary">Submit RFP</a>
+                <a href="#demo" class="btn-primary">Request a Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="about-hero-pattern"></div>
+        <div class="about-hero-content">
+            <div class="about-hero-label">About Trustwave</div>
+            <h1 class="about-hero-title">
+                Protecting organizations worldwide with <span class="highlight">elite cybersecurity</span> expertise.
+            </h1>
+            <p class="about-hero-subtitle">
+                For over two decades, Trustwave has been at the forefront of cybersecurity, delivering managed security services and innovative solutions to thousands of organizations across the globe.
+            </p>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number"><span class="highlight">20</span>+</div>
+                    <div class="stat-label">Years of cybersecurity excellence</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5K+</div>
+                    <div class="stat-label">Organizations protected globally</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">96</div>
+                    <div class="stat-label">Countries served worldwide</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1.5K+</div>
+                    <div class="stat-label">Cybersecurity professionals</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="mission-container">
+            <div class="mission-left">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=500&fit=crop"
+                     alt="Cybersecurity Team"
+                     class="mission-image-main">
+                <div class="mission-card">
+                    <div class="mission-card-number">24/7</div>
+                    <div class="mission-card-label">Security Operations</div>
+                </div>
+            </div>
+
+            <div class="mission-right">
+                <h2>Our <span class="highlight">mission</span> is to safeguard your digital future.</h2>
+                <p class="mission-description">
+                    Trustwave is committed to empowering businesses with the tools, expertise, and intelligence needed to defend against evolving cyber threats. We believe in proactive security that adapts to the changing threat landscape.
+                </p>
+                <div class="mission-list">
+                    <div class="mission-item">
+                        <div class="mission-bullet"></div>
+                        <div class="mission-text">Deliver industry-leading managed security services that protect critical assets</div>
+                    </div>
+                    <div class="mission-item">
+                        <div class="mission-bullet"></div>
+                        <div class="mission-text">Provide actionable threat intelligence through our elite SpiderLabs research team</div>
+                    </div>
+                    <div class="mission-item">
+                        <div class="mission-bullet"></div>
+                        <div class="mission-text">Enable organizations to achieve compliance and maintain robust security postures</div>
+                    </div>
+                    <div class="mission-item">
+                        <div class="mission-bullet"></div>
+                        <div class="mission-text">Foster long-term partnerships built on trust, transparency, and results</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="values-container">
+            <div class="values-header">
+                <div class="values-label">Our Core Values</div>
+                <h2 class="values-title">The principles that drive everything we do.</h2>
+                <p class="values-description">
+                    Our values shape our culture, guide our decisions, and define how we serve our clients every day.
+                </p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="12"/>
+                            <path d="M20 8 L20 20 L28 20"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-card-title">Excellence</h3>
+                    <p class="value-card-description">
+                        We strive for excellence in everything we do, from the security services we deliver to the relationships we build with our clients and partners.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="12" width="24" height="16" rx="2"/>
+                            <line x1="20" y1="12" x2="20" y2="28"/>
+                            <line x1="8" y1="20" x2="32" y2="20"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-card-title">Innovation</h3>
+                    <p class="value-card-description">
+                        Cyber threats evolve daily. We continuously innovate our technologies and methodologies to stay ahead of adversaries and protect our clients.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 10 L25 18 L20 26 L15 18 Z"/>
+                            <circle cx="20" cy="18" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-card-title">Integrity</h3>
+                    <p class="value-card-description">
+                        Trust is earned through transparency and honesty. We operate with the highest ethical standards and always do what's right for our clients.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="6"/>
+                            <circle cx="27" cy="22" r="5"/>
+                            <line x1="19" y1="18" x2="24" y2="20"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-card-title">Collaboration</h3>
+                    <p class="value-card-description">
+                        Security is a team effort. We work closely with our clients, integrating with their teams to create a unified defense strategy.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 8 L32 20 L20 32 L8 20 Z"/>
+                            <circle cx="20" cy="20" r="5"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-card-title">Expertise</h3>
+                    <p class="value-card-description">
+                        Our team comprises world-class security experts, researchers, and analysts who bring decades of combined experience to every engagement.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                            <polyline points="12,20 18,26 28,14"/>
+                            <circle cx="20" cy="20" r="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-card-title">Commitment</h3>
+                    <p class="value-card-description">
+                        We're committed to our clients' success. Our 24/7/365 operations ensure that we're always there when threats emerge, day or night.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="timeline-container">
+            <div class="timeline-header">
+                <h2 class="timeline-title">Our journey of innovation and growth.</h2>
+                <p class="timeline-subtitle">
+                    From our founding to becoming the world's largest independent MSSP, our history is defined by milestones that shaped the cybersecurity industry.
+                </p>
+            </div>
+
+            <div class="timeline-list">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">1995</div>
+                    <h3 class="timeline-event-title">Trustwave Founded</h3>
+                    <p class="timeline-event-description">
+                        Trustwave was established with a vision to provide comprehensive security solutions to businesses facing emerging digital threats.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2004</div>
+                    <h3 class="timeline-event-title">SpiderLabs Established</h3>
+                    <p class="timeline-event-description">
+                        Launched our elite security research team, SpiderLabs, dedicated to threat intelligence, vulnerability research, and incident response.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2011</div>
+                    <h3 class="timeline-event-title">Global Expansion Milestone</h3>
+                    <p class="timeline-event-description">
+                        Expanded operations to serve clients in over 50 countries, establishing regional security operations centers worldwide.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2015</div>
+                    <h3 class="timeline-event-title">MDR Services Launch</h3>
+                    <p class="timeline-event-description">
+                        Introduced Managed Detection and Response (MDR) services, revolutionizing how organizations approach threat detection and incident response.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2020</div>
+                    <h3 class="timeline-event-title">Industry Recognition</h3>
+                    <p class="timeline-event-description">
+                        Named a Leader by major analyst firms including Gartner, Forrester, and IDC for our comprehensive security platform and services.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2024</div>
+                    <h3 class="timeline-event-title">LevelBlue Acquisition</h3>
+                    <p class="timeline-event-description">
+                        Acquired by LevelBlue to form the world's largest pure-play managed security services provider, serving over 5,000 organizations globally.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="leadership-section">
+        <div class="leadership-container">
+            <div class="leadership-header">
+                <div class="leadership-label">Leadership Team</div>
+                <h2 class="leadership-title">Meet the experts leading our mission.</h2>
+            </div>
+
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <!-- Placeholder for leader image -->
+                    </div>
+                    <div class="leader-info">
+                        <h3 class="leader-name">Sarah Mitchell</h3>
+                        <div class="leader-title">Chief Executive Officer</div>
+                        <p class="leader-bio">
+                            Sarah brings over 25 years of cybersecurity leadership, driving Trustwave's vision of becoming the world's most trusted security partner.
+                        </p>
+                        <div class="leader-social">
+                            <a href="#" class="leader-social-link">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="leader-social-link">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <!-- Placeholder for leader image -->
+                    </div>
+                    <div class="leader-info">
+                        <h3 class="leader-name">David Chen</h3>
+                        <div class="leader-title">Chief Technology Officer</div>
+                        <p class="leader-bio">
+                            David oversees Trustwave's technology strategy, platform development, and innovation initiatives across all security services.
+                        </p>
+                        <div class="leader-social">
+                            <a href="#" class="leader-social-link">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="leader-social-link">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <!-- Placeholder for leader image -->
+                    </div>
+                    <div class="leader-info">
+                        <h3 class="leader-name">Dr. Maria Rodriguez</h3>
+                        <div class="leader-title">VP, SpiderLabs Research</div>
+                        <p class="leader-bio">
+                            Dr. Rodriguez leads our elite SpiderLabs team, conducting cutting-edge security research and threat intelligence analysis.
+                        </p>
+                        <div class="leader-social">
+                            <a href="#" class="leader-social-link">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="leader-social-link">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <div class="cta-inner">
+                    <h2 class="cta-title">
+                        Ready to protect your organization?
+                    </h2>
+                    <p class="cta-description">
+                        Join thousands of organizations worldwide that trust Trustwave to defend their critical assets and secure their digital future.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#demo" class="cta-button-primary">Request a Demo</a>
+                        <a href="#contact" class="cta-button-secondary">
+                            Talk to an Expert →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <!-- Left Column - Newsletter -->
+            <div class="footer-left">
+                <h3 class="footer-newsletter-title">Stay Informed</h3>
+                <p class="footer-newsletter-description">
+                    Sign up to receive the latest security news and trends straight to your inbox from Trustwave, A LevelBlue Company.
+                </p>
+                <form class="footer-newsletter-form">
+                    <input type="email" class="footer-input" placeholder="Business Email*" required>
+                    <p class="footer-error-message">Please complete this required field.</p>
+                    <button type="submit" class="footer-subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Right Column - Links with social -->
+            <div class="footer-right">
+                <div class="footer-links-grid">
+                    <div class="footer-column">
+                        <a href="#" class="footer-link">View All Services</a>
+                        <a href="#" class="footer-link">Our History</a>
+                        <a href="#" class="footer-link">News Releases</a>
+                        <a href="#" class="footer-link">Media Coverage</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#" class="footer-link">Careers</a>
+                        <a href="#" class="footer-link">Submit RFP</a>
+                        <a href="#" class="footer-link">Awards & Accolades</a>
+                        <a href="#" class="footer-link">Free Trials</a>
+                    </div>
+                    <div class="footer-column">
+                        <a href="#" class="footer-link">Contact</a>
+                        <a href="#" class="footer-link">Support</a>
+                        <a href="#" class="footer-link">Security Advisories</a>
+                        <a href="#" class="footer-link">Software Updates</a>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom - Social + Legal -->
+                <div class="footer-bottom">
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="LinkedIn">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="X">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer-social-link" aria-label="YouTube">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="footer-legal">
+                        <a href="#" class="footer-legal-link">Legal</a>
+                        <a href="#" class="footer-legal-link">Terms of Use</a>
+                        <a href="#" class="footer-legal-link">Privacy Policy</a>
+                        <span class="footer-copyright">Copyright © 2025 Trustwave Holdings, Inc. All rights reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('mainHeader');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form validation
+        const newsletterForm = document.querySelector('.footer-newsletter-form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('.footer-input').value;
+                if (email) {
+                    alert('Thank you for subscribing!');
+                    this.reset();
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

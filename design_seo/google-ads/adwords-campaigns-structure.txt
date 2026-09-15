@@ -1,0 +1,892 @@
+================================================================================
+CAMPAGNES GOOGLE ADS - FORMATION PROFESSIONNELLE IT
+================================================================================
+Version: 1.0
+Date: 2025-11-21
+Service: Formation professionnelle et bootcamps IT
+
+IMPORTANT: Ce document respecte les guidelines Google AdWords concernant
+la publicité pour services de formation professionnelle.
+
+================================================================================
+STRUCTURE DES CAMPAGNES
+================================================================================
+
+CAMPAGNE FRANCE - FORMATION PROFESSIONNELLE IT
+└── Groupe d'annonces 1: Cybersécurité & Hacking Éthique
+└── Groupe d'annonces 2: Certifications IT Infrastructure
+└── Groupe d'annonces 3: Développement Web & Programmation
+└── Groupe d'annonces 4: Data Science & Intelligence Artificielle
+└── Groupe d'annonces 5: Marketing Digital & E-commerce
+
+Zones géographiques ciblées:
+- National France
+- Focus grandes villes: Paris, Lyon, Toulouse, Marseille, Bordeaux, Nantes
+- Formation en ligne accessible partout
+
+
+================================================================================
+GROUPE D'ANNONCES 1: CYBERSÉCURITÉ & HACKING ÉTHIQUE
+================================================================================
+Budget alloué: 35% du budget
+CPC estimé: €3-8
+Objectif conversions: Demandes de renseignements qualifiées
+
+Formations incluses:
+- eJPT (Certification Pentesting) - 3 jours - 2 690€
+- Bootcamp Cybersécurité - 7 mois - 7 500€
+- CISSP (Certification ISC2) - Bootcamp officiel
+- CompTIA Security+ - Certification sécurité
+- Certified Ethical Hacker (CEH) - Formation hacking éthique
+
+────────────────────────────────────────────────────────────────────────────────
+MOTS-CLÉS - TIER 1 (Haute intention commerciale)
+────────────────────────────────────────────────────────────────────────────────
+
+[formation cybersécurité certifiante]
+[bootcamp cybersécurité france]
+[formation ejpt certification]
+[formation cissp france]
+[formation comptia security plus]
+[formation hacker éthique]
+[formation pentesting france]
+[reconversion cybersécurité]
+[formation sécurité informatique diplômante]
+[certification cybersécurité professionnelle]
+[formation cybersécurité en ligne]
+[bootcamp hacking éthique]
+[formation security analyst]
+[devenir pentester formation]
+[formation analyste cybersécurité]
+"formation certifiante cybersécurité"
+"bootcamp cybersécurité certifiant"
+"formation professionnelle cybersécurité"
+"préparation certification ejpt"
+"préparation certification cissp"
+"formation ethical hacker"
+
+────────────────────────────────────────────────────────────────────────────────
+MOTS-CLÉS - TIER 2 (Intention modérée)
+────────────────────────────────────────────────────────────────────────────────
+
+[formation cybersécurité]
+[bootcamp cybersécurité]
+[formation hacking]
+[formation pentesting]
+[apprendre cybersécurité]
+[cours cybersécurité]
+[formation sécurité informatique]
+"reconversion professionnelle cybersécurité"
+"carrière cybersécurité"
+"devenir expert cybersécurité"
+
+────────────────────────────────────────────────────────────────────────────────
+ANNONCES GOOGLE ADS - CYBERSÉCURITÉ
+────────────────────────────────────────────────────────────────────────────────
+
+ANNONCE 1 - Bootcamp Cybersécurité
+Titre 1: Bootcamp Cybersécurité 7 Mois
+Titre 2: Formation Professionnelle
+Titre 3: Accompagnement Personnalisé
+Description 1: Bootcamp intensif en cybersécurité. Formation complète avec mentors experts et projets pratiques.
+Description 2: Programme certifiant reconnu. Financement possible CPF. Démarrez votre carrière en cybersécurité.
+
+ANNONCE 2 - Certification eJPT
+Titre 1: Formation Certification eJPT
+Titre 2: Pentesting Professionnel
+Titre 3: Formation Intensive 3 Jours
+Description 1: Préparez votre certification eJPT avec formateurs experts. Formation pratique en pentesting.
+Description 2: Programme officiel de préparation. Exercices pratiques inclus. Débutez votre parcours pentester.
+
+ANNONCE 3 - CISSP & Security+
+Titre 1: Préparation CISSP & Security+
+Titre 2: Certifications Reconnues
+Titre 3: Formations Professionnelles
+Description 1: Formations aux certifications CISSP et CompTIA Security+. Accompagnement par experts certifiés.
+Description 2: Programme complet avec exercices. Financement CPF disponible. Boostez votre carrière IT.
+
+────────────────────────────────────────────────────────────────────────────────
+EXTENSIONS DE LIENS - CYBERSÉCURITÉ
+────────────────────────────────────────────────────────────────────────────────
+
+Extension 1:
+Titre: Bootcamp Cybersécurité
+Description: Formation intensive 7 mois. Mentors experts et projets pratiques
+URL: https://www.example.com/bootcamp-cybersecurite/
+
+Extension 2:
+Titre: Certification eJPT
+Description: Formation pentesting 3 jours. Préparation complète
+URL: https://www.example.com/formation-ejpt/
+
+Extension 3:
+Titre: Formation CISSP
+Description: Préparation certification ISC2. Programme officiel
+URL: https://www.example.com/formation-cissp/
+
+Extension 4:
+Titre: Financement CPF
+Description: Formations éligibles CPF. Conseil personnalisé
+URL: https://www.example.com/financement-formation/
+
+────────────────────────────────────────────────────────────────────────────────
+ANNONCES FACEBOOK ADS - CYBERSÉCURITÉ
+────────────────────────────────────────────────────────────────────────────────
+
+AD 1 - Reconversion Cybersécurité
+Titre: 🔐 Reconversion Cybersécurité
+Description: Bootcamp 7 mois certifiant
+Primary Text: Envie de vous reconvertir dans la cybersécurité ? Bootcamp intensif 7 mois avec mentors experts et accompagnement personnalisé. Formation éligible CPF.
+CTA: En Savoir Plus
+Landing Page: https://www.example.com/bootcamp-cybersecurite/
+
+AD 2 - Certification eJPT
+Titre: 🎯 Certification eJPT Pentesting
+Description: Formation intensive 3 jours
+Primary Text: Devenez pentester certifié ! Formation eJPT intensive avec formateurs experts. Programme pratique complet. Démarrez votre carrière en cybersécurité.
+CTA: Demander Info
+Landing Page: https://www.example.com/formation-ejpt/
+
+AD 3 - Carrière Cybersécurité
+Titre: 💼 Carrière en Cybersécurité
+Description: Formations certifiantes
+Primary Text: Lancez votre carrière en cybersécurité ! Formations CISSP, Security+, CEH avec experts certifiés. Accompagnement personnalisé et financement CPF disponible.
+CTA: Découvrir les Formations
+Landing Page: https://www.example.com/formations-cybersecurite/
+
+
+================================================================================
+GROUPE D'ANNONCES 2: CERTIFICATIONS IT INFRASTRUCTURE
+================================================================================
+Budget alloué: 10% du budget
+CPC estimé: €2-5
+Objectif conversions: Demandes de renseignements
+
+Formations incluses:
+- CompTIA A+ - Certification support technique et infrastructure
+
+────────────────────────────────────────────────────────────────────────────────
+MOTS-CLÉS - TIER 1 (Haute intention commerciale)
+────────────────────────────────────────────────────────────────────────────────
+
+[formation comptia a+ france]
+[certification comptia a+ préparation]
+[formation technicien informatique certifiante]
+[formation support technique certifié]
+[préparation comptia a+]
+[formation infrastructure it]
+[bootcamp comptia a+]
+[formation certifiante support informatique]
+"formation comptia a plus"
+"certification technicien informatique"
+"reconversion support informatique"
+
+────────────────────────────────────────────────────────────────────────────────
+MOTS-CLÉS - TIER 2 (Intention modérée)
+────────────────────────────────────────────────────────────────────────────────
+
+[formation support informatique]
+[formation technicien informatique]
+[apprendre support technique]
+[cours infrastructure it]
+"devenir technicien informatique"
+
+────────────────────────────────────────────────────────────────────────────────
+ANNONCES GOOGLE ADS - COMPTIA A+
+────────────────────────────────────────────────────────────────────────────────
+
+ANNONCE 1 - CompTIA A+
+Titre 1: Formation CompTIA A+
+Titre 2: Certification Support IT
+Titre 3: Programme Complet
+Description 1: Préparez votre certification CompTIA A+ avec formateurs experts. Formation pratique complète.
+Description 2: Programme reconnu mondialement. Support et accompagnement inclus. Financement CPF possible.
+
+────────────────────────────────────────────────────────────────────────────────
+EXTENSIONS DE LIENS - COMPTIA A+
+────────────────────────────────────────────────────────────────────────────────
+
+Extension 1:
+Titre: Formation CompTIA A+
+Description: Certification support IT reconnue. Programme complet
+URL: https://www.example.com/formation-comptia-a-plus/
+
+
+================================================================================
+GROUPE D'ANNONCES 3: DÉVELOPPEMENT WEB & PROGRAMMATION
+================================================================================
+Budget alloué: 25% du budget
+CPC estimé: €2-6
+Objectif conversions: Demandes de renseignements qualifiées
+
+Formations incluses:
+- Développement Web Full Stack - Bootcamp complet
+- React JS - Framework frontend moderne
+- JavaScript - Langage de programmation web
+- Angular - Framework frontend entreprise
+
+────────────────────────────────────────────────────────────────────────────────
+MOTS-CLÉS - TIER 1 (Haute intention commerciale)
+────────────────────────────────────────────────────────────────────────────────
+
+[bootcamp développement web france]
+[formation développeur web certifiante]
+[formation react js professionnelle]
+[bootcamp javascript]
+[formation angular france]
+[reconversion développeur web]
+[formation full stack developer]
+[bootcamp développeur web diplômant]
+[formation développeur frontend]
+[formation développeur javascript certifiante]
+"bootcamp développement web certifiant"
+"formation professionnelle développeur"
+"reconversion développeur"
+"formation react professionnelle"
+"bootcamp programmation web"
+
+────────────────────────────────────────────────────────────────────────────────
+MOTS-CLÉS - TIER 2 (Intention modérée)
+────────────────────────────────────────────────────────────────────────────────
+
+[formation développement web]
+[bootcamp développeur]
+[formation react]
+[formation javascript]
+[formation angular]
+[apprendre développement web]
+[cours programmation web]
+"devenir développeur web"
+"carrière développeur"
+
+────────────────────────────────────────────────────────────────────────────────
+ANNONCES GOOGLE ADS - DÉVELOPPEMENT WEB
+────────────────────────────────────────────────────────────────────────────────
+
+ANNONCE 1 - Bootcamp Développeur Web
+Titre 1: Bootcamp Développeur Web
+Titre 2: Formation Full Stack Complète
+Titre 3: Accompagnement Personnalisé
+Description 1: Devenez développeur web professionnel. Bootcamp intensif avec projets pratiques et mentors experts.
+Description 2: Formation complète frontend et backend. Portfolio de projets inclus. Financement CPF disponible.
+
+ANNONCE 2 - Formation React JS
+Titre 1: Formation React JS Intensive
+Titre 2: Framework Frontend Moderne
+Titre 3: Projets Pratiques Inclus
+Description 1: Maîtrisez React JS avec formateurs experts. Formation pratique avec projets professionnels.
+Description 2: Programme complet React moderne. Accompagnement personnalisé. Boostez votre carrière développeur.
+
+ANNONCE 3 - Formation JavaScript
+Titre 1: Formation JavaScript Complète
+Titre 2: Du Débutant au Professionnel
+Titre 3: Programme Structuré
+Description 1: Apprenez JavaScript de zéro à expert. Formation structurée avec exercices pratiques quotidiens.
+Description 2: Accompagnement par développeurs seniors. Projets réels inclus. Lancez votre carrière web.
+
+────────────────────────────────────────────────────────────────────────────────
+EXTENSIONS DE LIENS - DÉVELOPPEMENT WEB
+────────────────────────────────────────────────────────────────────────────────
+
+Extension 1:
+Titre: Bootcamp Développeur Web
+Description: Formation intensive complète. Projets pratiques
+URL: https://www.example.com/bootcamp-developpeur-web/
+
+Extension 2:
+Titre: Formation React JS
+Description: Framework moderne frontend. Accompagnement expert
+URL: https://www.example.com/formation-react-js/
+
+Extension 3:
+Titre: Formation JavaScript
+Description: Du débutant à l'expert. Programme structuré
+URL: https://www.example.com/formation-javascript/
+
+Extension 4:
+Titre: Formation Angular
+Description: Framework entreprise. Projets professionnels
+URL: https://www.example.com/formation-angular/
+
+────────────────────────────────────────────────────────────────────────────────
+ANNONCES FACEBOOK ADS - DÉVELOPPEMENT WEB
+────────────────────────────────────────────────────────────────────────────────
+
+AD 4 - Reconversion Développeur
+Titre: 💻 Reconversion Développeur Web
+Description: Bootcamp intensif complet
+Primary Text: Envie de devenir développeur web ? Bootcamp intensif avec projets pratiques et accompagnement personnalisé. Formation éligible CPF. Lancez votre nouvelle carrière !
+CTA: Découvrir le Programme
+Landing Page: https://www.example.com/bootcamp-developpeur-web/
+
+AD 5 - Formation React
+Titre: ⚛️ Maîtrisez React JS
+Description: Formation professionnelle
+Primary Text: Devenez expert React JS ! Formation intensive avec formateurs expérimentés et projets professionnels. Idéal pour booster votre carrière de développeur.
+CTA: En Savoir Plus
+Landing Page: https://www.example.com/formation-react-js/
+
+AD 6 - Carrière Développeur
+Titre: 🚀 Carrière Développeur Web
+Description: Formation certifiante
+Primary Text: Lancez votre carrière en développement web ! Formations JavaScript, React, Angular avec mentors experts. Programme complet et accompagnement personnalisé.
+CTA: Demander Info
+Landing Page: https://www.example.com/formations-developpement-web/
+
+
+================================================================================
+GROUPE D'ANNONCES 4: DATA SCIENCE & INTELLIGENCE ARTIFICIELLE
+================================================================================
+Budget alloué: 20% du budget
+CPC estimé: €3-7
+Objectif conversions: Demandes de renseignements qualifiées
+
+Formations incluses:
+- Data Science - Formation complète
+- Bootcamp Data Scientist - Formation intensive 20 semaines
+- GenAI & LLMs NVIDIA - Intelligence artificielle générative
+- Deep Learning NVIDIA - Apprentissage profond
+
+────────────────────────────────────────────────────────────────────────────────
+MOTS-CLÉS - TIER 1 (Haute intention commerciale)
+────────────────────────────────────────────────────────────────────────────────
+
+[bootcamp data scientist france]
+[formation data science certifiante]
+[formation intelligence artificielle]
+[bootcamp machine learning]
+[formation deep learning france]
+[formation ia générative]
+[reconversion data scientist]
+[formation data analyst certifiante]
+[bootcamp data science diplômant]
+[formation nvidia deep learning]
+[formation llm intelligence artificielle]
+"bootcamp data science certifiant"
+"formation professionnelle data science"
+"reconversion data scientist"
+"formation ia professionnelle"
+"bootcamp intelligence artificielle"
+
+────────────────────────────────────────────────────────────────────────────────
+MOTS-CLÉS - TIER 2 (Intention modérée)
+────────────────────────────────────────────────────────────────────────────────
+
+[formation data science]
+[bootcamp data science]
+[formation machine learning]
+[formation intelligence artificielle]
+[apprendre data science]
+[cours data science]
+"devenir data scientist"
+"carrière data science"
+"apprendre ia"
+
+────────────────────────────────────────────────────────────────────────────────
+ANNONCES GOOGLE ADS - DATA SCIENCE & IA
+────────────────────────────────────────────────────────────────────────────────
+
+ANNONCE 1 - Bootcamp Data Scientist
+Titre 1: Bootcamp Data Scientist 20 Semaines
+Titre 2: Formation Intensive Complète
+Titre 3: Accompagnement Expert
+Description 1: Devenez Data Scientist professionnel. Bootcamp intensif avec projets pratiques et mentors experts.
+Description 2: Programme complet machine learning et IA. Portfolio de projets inclus. Financement CPF possible.
+
+ANNONCE 2 - Formation IA Générative
+Titre 1: Formation IA Générative NVIDIA
+Titre 2: GenAI & Large Language Models
+Titre 3: Technologies de Pointe
+Description 1: Maîtrisez l'IA générative avec formateurs experts NVIDIA. Formation pratique sur LLMs et GenAI.
+Description 2: Programme certifié NVIDIA. Projets concrets inclus. Expertise IA de pointe.
+
+ANNONCE 3 - Deep Learning
+Titre 1: Formation Deep Learning NVIDIA
+Titre 2: Apprentissage Profond
+Titre 3: Certification Reconnue
+Description 1: Formation Deep Learning certifiée NVIDIA. Apprentissage pratique des réseaux de neurones.
+Description 2: Accompagnement par experts IA. Projets professionnels inclus. Boostez votre carrière data.
+
+────────────────────────────────────────────────────────────────────────────────
+EXTENSIONS DE LIENS - DATA SCIENCE & IA
+────────────────────────────────────────────────────────────────────────────────
+
+Extension 1:
+Titre: Bootcamp Data Scientist
+Description: Formation intensive 20 semaines. Projets pratiques
+URL: https://www.example.com/bootcamp-data-scientist/
+
+Extension 2:
+Titre: Formation IA Générative
+Description: GenAI & LLMs NVIDIA. Technologies de pointe
+URL: https://www.example.com/formation-genai-llms/
+
+Extension 3:
+Titre: Deep Learning NVIDIA
+Description: Certification reconnue. Apprentissage profond
+URL: https://www.example.com/formation-deep-learning/
+
+Extension 4:
+Titre: Formation Data Science
+Description: Programme complet. Accompagnement personnalisé
+URL: https://www.example.com/formation-data-science/
+
+────────────────────────────────────────────────────────────────────────────────
+ANNONCES FACEBOOK ADS - DATA SCIENCE & IA
+────────────────────────────────────────────────────────────────────────────────
+
+AD 7 - Bootcamp Data Scientist
+Titre: 📊 Bootcamp Data Scientist
+Description: Formation intensive 20 semaines
+Primary Text: Lancez votre carrière en Data Science ! Bootcamp intensif 20 semaines avec projets pratiques et accompagnement personnalisé. Formation éligible CPF.
+CTA: Découvrir le Programme
+Landing Page: https://www.example.com/bootcamp-data-scientist/
+
+AD 8 - IA Générative
+Titre: 🤖 Formation IA Générative
+Description: GenAI & LLMs NVIDIA
+Primary Text: Maîtrisez l'IA générative ! Formation certifiée NVIDIA sur les Large Language Models et GenAI. Accompagnement par experts IA. Technologies de pointe.
+CTA: En Savoir Plus
+Landing Page: https://www.example.com/formation-genai-llms/
+
+AD 9 - Carrière Data Science
+Titre: 🎯 Carrière Data Science & IA
+Description: Formations certifiantes
+Primary Text: Devenez expert Data Science ! Formations complètes machine learning, deep learning et IA avec mentors experts. Programme certifiant reconnu.
+CTA: Demander Info
+Landing Page: https://www.example.com/formations-data-science/
+
+
+================================================================================
+GROUPE D'ANNONCES 5: MARKETING DIGITAL & E-COMMERCE
+================================================================================
+Budget alloué: 10% du budget
+CPC estimé: €2-5
+Objectif conversions: Demandes de renseignements
+
+Formations incluses:
+- Bootcamp Marketing Digital - Formation intensive 12 semaines
+- Performance Marketing Meta (Facebook/Instagram)
+- E-commerce & Boutique en Ligne
+
+────────────────────────────────────────────────────────────────────────────────
+MOTS-CLÉS - TIER 1 (Haute intention commerciale)
+────────────────────────────────────────────────────────────────────────────────
+
+[bootcamp marketing digital france]
+[formation marketing digital certifiante]
+[formation facebook ads professionnelle]
+[formation instagram ads]
+[formation e-commerce certifiante]
+[reconversion marketing digital]
+[bootcamp webmarketing diplômant]
+[formation performance marketing]
+[formation boutique en ligne]
+[formation dropshipping professionnelle]
+"bootcamp marketing digital certifiant"
+"formation professionnelle marketing digital"
+"reconversion marketing digital"
+"formation ads meta"
+"bootcamp e-commerce"
+
+────────────────────────────────────────────────────────────────────────────────
+MOTS-CLÉS - TIER 2 (Intention modérée)
+────────────────────────────────────────────────────────────────────────────────
+
+[formation marketing digital]
+[bootcamp marketing]
+[formation facebook ads]
+[formation e-commerce]
+[apprendre marketing digital]
+[cours marketing digital]
+"devenir growth marketer"
+"carrière marketing digital"
+
+────────────────────────────────────────────────────────────────────────────────
+ANNONCES GOOGLE ADS - MARKETING DIGITAL
+────────────────────────────────────────────────────────────────────────────────
+
+ANNONCE 1 - Bootcamp Marketing Digital
+Titre 1: Bootcamp Marketing Digital 12 Semaines
+Titre 2: Formation Intensive Complète
+Titre 3: Accompagnement Expert
+Description 1: Devenez expert marketing digital. Bootcamp intensif avec projets pratiques et mentors professionnels.
+Description 2: Programme complet SEO, SEA, Social Media. Campagnes réelles incluses. Financement CPF disponible.
+
+ANNONCE 2 - Performance Marketing Meta
+Titre 1: Formation Facebook & Instagram Ads
+Titre 2: Performance Marketing Meta
+Titre 3: Experts Certifiés
+Description 1: Maîtrisez les publicités Meta avec formateurs certifiés. Formation pratique Facebook et Instagram Ads.
+Description 2: Campagnes professionnelles incluses. ROI optimization. Boostez vos compétences marketing.
+
+ANNONCE 3 - Formation E-commerce
+Titre 1: Formation E-commerce Complète
+Titre 2: Créez Votre Boutique en Ligne
+Titre 3: Programme Pratique
+Description 1: Lancez votre boutique e-commerce. Formation complète de la création à l'optimisation des ventes.
+Description 2: Accompagnement personnalisé. Outils et stratégies inclus. Démarrez votre business en ligne.
+
+────────────────────────────────────────────────────────────────────────────────
+EXTENSIONS DE LIENS - MARKETING DIGITAL
+────────────────────────────────────────────────────────────────────────────────
+
+Extension 1:
+Titre: Bootcamp Marketing Digital
+Description: Formation intensive 12 semaines. Projets réels
+URL: https://www.example.com/bootcamp-marketing-digital/
+
+Extension 2:
+Titre: Formation Meta Ads
+Description: Facebook & Instagram Ads. Experts certifiés
+URL: https://www.example.com/formation-meta-ads/
+
+Extension 3:
+Titre: Formation E-commerce
+Description: Boutique en ligne complète. Accompagnement
+URL: https://www.example.com/formation-ecommerce/
+
+────────────────────────────────────────────────────────────────────────────────
+ANNONCES FACEBOOK ADS - MARKETING DIGITAL
+────────────────────────────────────────────────────────────────────────────────
+
+AD 10 - Bootcamp Marketing
+Titre: 📱 Bootcamp Marketing Digital
+Description: Formation intensive 12 semaines
+Primary Text: Lancez votre carrière en marketing digital ! Bootcamp intensif 12 semaines avec projets pratiques et accompagnement personnalisé. Formation éligible CPF.
+CTA: Découvrir le Programme
+Landing Page: https://www.example.com/bootcamp-marketing-digital/
+
+AD 11 - Meta Ads
+Titre: 🎯 Formation Facebook & Instagram Ads
+Description: Performance Marketing
+Primary Text: Maîtrisez les publicités Meta ! Formation certifiée Facebook et Instagram Ads avec experts. Campagnes réelles et stratégies d'optimisation ROI incluses.
+CTA: En Savoir Plus
+Landing Page: https://www.example.com/formation-meta-ads/
+
+AD 12 - E-commerce
+Titre: 🛒 Formation E-commerce
+Description: Créez votre boutique en ligne
+Primary Text: Lancez votre boutique e-commerce ! Formation complète de la création à l'optimisation. Accompagnement personnalisé et outils professionnels inclus.
+CTA: Demander Info
+Landing Page: https://www.example.com/formation-ecommerce/
+
+
+================================================================================
+ÉLÉMENTS PARTAGÉS - TOUTES CAMPAGNES
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+MOTS-CLÉS NÉGATIFS (À appliquer à toutes les campagnes)
+────────────────────────────────────────────────────────────────────────────────
+
+Formation gratuite/low-cost:
+[formation gratuite]
+[cours gratuit]
+[bootcamp gratuit]
+[formation pas cher]
+free, gratuit, gratis, cheap, pas cher
+
+Contenu non-commercial:
+[tuto gratuit]
+[tutoriel youtube]
+[cours youtube]
+[mooc gratuit]
+[formation openclassroom gratuite]
+youtube, tuto, tutoriel, openclassroom gratuit
+
+Offres d'emploi:
+[offre emploi développeur]
+[recrutement développeur]
+[offre stage]
+[alternance]
+emploi, recrutement, job, offre, cv, stage, alternance
+
+Ressources gratuites:
+blog, forum, reddit, article, wiki, documentation gratuite
+free course, free tutorial, free bootcamp
+
+Termes généraux:
+comment, pourquoi, qu'est-ce, définition, c'est quoi
+what is, how to free, apprendre gratuitement
+
+Matériel/Logiciel:
+[achat logiciel]
+[télécharger logiciel]
+[crack]
+[licence]
+download, crack, torrent, pirate
+
+Concurrence directe:
+[nom des concurrents directs à ajouter]
+
+────────────────────────────────────────────────────────────────────────────────
+EXTENSIONS D'ACCROCHE (Callouts)
+────────────────────────────────────────────────────────────────────────────────
+
+Formation Certifiante
+Accompagnement Personnalisé
+Projets Pratiques Inclus
+Mentors Experts
+Financement CPF Possible
+Cours en Ligne & Présentiel
+Portfolio de Projets
+Support Continu
+Formation Professionnelle
+Reconversion Accompagnée
+Plateforme d'Apprentissage
+Certification Reconnue
+
+────────────────────────────────────────────────────────────────────────────────
+EXTENSIONS STRUCTURÉES
+────────────────────────────────────────────────────────────────────────────────
+
+Domaines de Formation:
+- Cybersécurité & Hacking
+- Développement Web
+- Data Science & IA
+- Marketing Digital
+- Certifications IT
+
+Formats de Formation:
+- Bootcamps Intensifs
+- Formations Courtes
+- Cours en Ligne
+- Sessions Pratiques
+- Accompagnement 1-1
+
+Avantages:
+- Mentors Experts
+- Projets Professionnels
+- Certification Reconnue
+- Financement CPF
+- Support Carrière
+- Plateforme E-learning
+
+
+================================================================================
+STRATÉGIE D'OPTIMISATION
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+CIBLAGE DÉMOGRAPHIQUE
+────────────────────────────────────────────────────────────────────────────────
+
+Âge: 22-45 ans
+- 22-28 ans: Premiers emplois, changement d'orientation
+- 29-35 ans: Reconversion professionnelle
+- 36-45 ans: Évolution de carrière, spécialisation
+
+Profils cibles:
+- Salariés en reconversion
+- Étudiants en fin d'études
+- Demandeurs d'emploi
+- Professionnels en évolution
+- Entrepreneurs
+
+Zones géographiques:
+- National France (formations en ligne)
+- Focus grandes villes pour présentiel
+
+────────────────────────────────────────────────────────────────────────────────
+AJUSTEMENTS TEMPORELS
+────────────────────────────────────────────────────────────────────────────────
+
+Périodes Haute Demande:
+- Septembre-Octobre (rentrée professionnelle): +30% budget
+- Janvier-Février (résolutions nouvelles): +25% budget
+- Avril-Mai (avant été): +15% budget
+- Lundi-Mercredi 9h-18h: +20% enchères (heures bureau)
+
+Périodes Basse Demande:
+- Juillet-Août (vacances): -20% budget
+- Décembre (fin d'année): -15% budget
+- Week-ends: -10% enchères
+
+Optimisations par jour:
+- Lundi-Mercredi: Focus reconversion (salariés actifs)
+- Jeudi-Vendredi: Focus formations courtes
+- Week-end: Réduction enchères, remarketing
+
+────────────────────────────────────────────────────────────────────────────────
+STRATÉGIE DE LANDING PAGES
+────────────────────────────────────────────────────────────────────────────────
+
+Éléments Obligatoires:
+1. Programme détaillé de formation
+2. Durée et format (en ligne/présentiel/hybride)
+3. Prix transparent (avec mention financement CPF)
+4. Témoignages d'anciens élèves
+5. Formateurs/mentors présentés
+6. Projets et portfolio inclus
+7. Certification obtenue
+8. Formulaire de contact visible
+9. Chat disponible pour questions
+10. FAQ détaillée
+
+Mobile Optimization:
+- 60% trafic mobile attendu
+- Formulaire simplifié mobile
+- Click-to-call pour conseiller
+- Menu navigation facile
+- Chargement rapide
+
+
+================================================================================
+OBJECTIFS DE PERFORMANCE
+================================================================================
+
+CTR Minimum: 3-5%
+Taux de Conversion (demande info): 8-12%
+CPA Cible: €50-150 (selon formation)
+Quality Score Minimum: 7/10
+
+Budget Mensuel Recommandé par Groupe:
+- Cybersécurité: €3,500 (35%)
+- Développement Web: €2,500 (25%)
+- Data Science & IA: €2,000 (20%)
+- Marketing Digital: €1,000 (10%)
+- Infrastructure IT: €1,000 (10%)
+
+Total Budget Mensuel: €10,000
+
+Objectifs Conversions:
+- Cybersécurité: 40-60 demandes qualifiées/mois
+- Développement Web: 50-80 demandes qualifiées/mois
+- Data Science & IA: 30-50 demandes qualifiées/mois
+- Marketing Digital: 20-40 demandes qualifiées/mois
+- Infrastructure IT: 15-30 demandes qualifiées/mois
+
+
+================================================================================
+CONFORMITÉ GOOGLE ADS - FORMATION PROFESSIONNELLE
+================================================================================
+
+✅ Conformité Vérifiée:
+- Pas de promesses de certification garantie
+- Terminologie "formation", "préparation", "accompagnement"
+- Prix transparent avec mention financement CPF
+- Durée de formation clairement indiquée
+- Pas de promesses d'emploi garanti
+- Pas de revenus garantis promis
+- Respect des politiques de publicité pour l'éducation
+- Aucune discrimination dans le ciblage
+- Organisme de formation déclaré (mentionner numéro)
+
+✅ Politiques Respectées:
+- Services éducatifs légitimes et autorisés
+- Contenus appropriés pour tous publics
+- Pas de ciblage discriminatoire
+- Terminologie professionnelle et réaliste
+- Transparence sur durée et investissement
+- Mention claire du type de certification obtenue
+- Pas de promesses excessives de résultats
+
+⚠️ Mentions Obligatoires:
+- "Formation professionnelle"
+- Durée précise (jours/semaines/mois)
+- "Éligible CPF" si applicable
+- Type de certification ou attestation délivrée
+- Numéro d'organisme de formation
+- Conditions d'accès si prérequis
+
+✅ Termes Autorisés:
+- "Formation certifiante" (si certification délivrée)
+- "Bootcamp intensif"
+- "Accompagnement personnalisé"
+- "Projets pratiques"
+- "Préparation à la certification"
+- "Formation professionnelle"
+- "Reconversion accompagnée"
+
+❌ Termes à Éviter:
+- "Certification garantie"
+- "Emploi garanti"
+- "Salaire garanti de X€"
+- "Devenez riche"
+- "Succès garanti"
+- "100% de réussite"
+- Promesses de résultats financiers
+
+
+================================================================================
+NOTES TECHNIQUES
+================================================================================
+
+Format Facebook Ads:
+- Titres: 25-40 caractères max
+- Descriptions: 27 caractères max
+- Primary Text: 125 caractères max (affichage optimal)
+- Format Image: 1:1 (carré) ou 4:5 (vertical mobile)
+- Audience: Adultes 22-45 ans intéressés par formation professionnelle
+
+Ciblage Démographique Facebook:
+- Âge: 22-45 ans
+- Zones urbaines France
+- Intérêts: Formation professionnelle, reconversion, carrière, technologie
+- Comportements: Recherche d'emploi, évolution professionnelle, apprentissage en ligne
+- Éducation: Niveau Bac minimum
+
+Audiences Personnalisées:
+- Visiteurs site web (remarketing)
+- Audiences similaires (lookalike) sur conversions
+- Engagement vidéo (formation gratuite/webinaire)
+- Liste emails prospects qualifiés
+
+Exclusions:
+- Étudiants actuels de l'organisme
+- Personnes ayant complété une formation récemment
+- Concurrents et employés concurrents
+
+Optimisation Mobile:
+- 60% trafic mobile attendu
+- Formulaire simplifié mobile
+- Click-to-call pour conseiller formation
+- WhatsApp business pour questions rapides
+- Design responsive optimisé
+
+
+================================================================================
+STRATÉGIE DE CONTENU COMPLÉMENTAIRE
+================================================================================
+
+Webinaires Gratuits (Lead Magnets):
+- "Introduction à la Cybersécurité" (1h)
+- "Premiers Pas en Développement Web" (1h)
+- "Découvrir la Data Science" (1h)
+- "Marketing Digital pour Débutants" (1h)
+
+Remarketing Post-Webinaire:
+- Offre spéciale -10% sur formation complète
+- Appel découverte gratuit avec conseiller
+- Accès plateforme e-learning 7 jours gratuit
+
+Lead Nurturing:
+- Email sequence 7 jours pour prospects
+- Témoignages d'anciens élèves
+- Cas pratiques et réussites
+- Info financement CPF détaillée
+- Appel à l'action progressif
+
+Contenu Blog SEO:
+- "Comment devenir développeur web en 2025"
+- "Reconversion cybersécurité : guide complet"
+- "Top 10 certifications IT les plus demandées"
+- "CPF et formation professionnelle : tout savoir"
+
+
+================================================================================
+FIN DU DOCUMENT
+================================================================================
+
+Pour toute question concernant la mise en œuvre de ces campagnes,
+veuillez consulter le fichier source:
+- it-training-fr-specialties.js (configuration détaillée des formations)
+
+IMPORTANT: Avant le lancement, vérifier:
+✓ Numéro d'organisme de formation déclaré
+✓ Certifications et agréments à jour
+✓ Pages de destination conformes (prix, durée, programme)
+✓ Politique de remboursement claire
+✓ CGV accessibles
+✓ Mentions légales complètes

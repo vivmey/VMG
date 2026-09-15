@@ -1,0 +1,29 @@
+
+Configurer une balise Google sur votre site Web
+
+
+Vous avez récemment consulté des instructions sur la façon de configurer une balise Google sur votre site Web. Nous vous envoyons ces instructions, car nous n'avons détecté aucune balise Google sur vos pages.
+Option 1 : Installez un ID de suivi via votre service d'hébergement ou votre plate-forme d'e-commerce
+Connectez-vous à votre outil de création de sites Web, votre service d'hébergement Web ou votre plate-forme d'e-commerce, et collez votre ID de suivi dans la section "Analytics".
+AW-17811630110
+Option 2 : Installez une balise de suivi dans le code de votre site Web
+Collez votre balise Google avant la balise de fermeture </head> sur toutes les pages de votre site Web que vous souhaitez suivre.
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17811630110"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17811630110');
+</script>
+Enfin, installez un extrait d'événement pour chacun de vos objectifs afin de mesurer les conversions sur le site Web
+Copiez l'extrait ci-dessous et collez-le entre les balises <head></head> des pages que vous souhaitez intégrer au suivi, juste après la balise Google
+<!-- Event snippet for Envoi de formulaire de lead conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17811630110/NeTACLeuhNQbEJ7Qn61C',
+      'value': 1.0,
+      'currency': 'EUR'
+  });
+</script>

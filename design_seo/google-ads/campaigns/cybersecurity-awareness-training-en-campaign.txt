@@ -1,0 +1,489 @@
+================================================================================
+CAMPAGNE GOOGLE ADS
+================================================================================
+Nom: it-training-awareness-client-en
+Langue: EN
+Service: Cybersecurity Awareness Training
+URL Landing: https://cagpemini.com/en/formation/cybersecurity-awareness-training
+Date de génération: 2025-12-19
+Généré par: Claude Code
+
+================================================================================
+MOTS-CLÉS SÉLECTIONNÉS (8)
+================================================================================
+| Keyword                                  | Volume/mois | Compétition | CPC Range |
+|------------------------------------------|-------------|-------------|-----------|
+| cybersecurity awareness training         | 135,000     | Faible      | €10-70    |
+| cyber security awareness                 | 301,000     | Faible      | €5-19     |
+| security awareness training plan         | 6,600       | Faible      | €9-75     |
+| cyber security training for employees    | 2,400       | Faible      | €20-81    |
+| security awareness and training program  | 6,600       | Faible      | €9-75     |
+| cyber security awareness training program| 33,100      | Faible      | €30-76    |
+| it security awareness training           | 320         | Moyen       | €11-70    |
+| computer security training for employees | 2,400       | Faible      | €20-81    |
+
+================================================================================
+MOTS-CLÉS NÉGATIFS
+================================================================================
+gratuit, free, gratis
+tuto, tutoriel, tutorial, youtube
+emploi, job, recrutement, offre, cv, stage, alternance
+télécharger, download, crack, torrent, pirate
+comment, pourquoi, what is, how to
+mooc, coursera, udemy, openclassroom
+définition, definition, wiki
+
+
+================================================================================
+GROUPE D'ANNONCES: GLOBAL (Sans ciblage géographique)
+================================================================================
+Nom: it-training-awareness-client-en-global
+Région: Worldwide (All English-speaking markets)
+URL: https://cagpemini.com/en/formation/cybersecurity-awareness-training
+
+MOTS-CLÉS:
+[cybersecurity awareness training]
+[cyber security training for employees]
+[security awareness training plan]
+"security awareness training program"
+"computer security training for employees"
++cybersecurity +awareness +training
+[it security awareness training]
+"cyber security awareness"
+
+ANNONCE RSA GLOBALE (Responsive Search Ad):
+
+TITRES (12):
+Titre 1: Cybersecurity Awareness (23 chars) ✓
+Titre 2: Security Training Program (25 chars) ✓
+Titre 3: Reduce Incidents by 70% (23 chars) ✓
+Titre 4: Act Before It's Too Late (24 chars) ✓
+Titre 5: Train Your Team Today (21 chars) ✓
+Titre 6: 1-Day Intensive Program (23 chars) ✓
+Titre 7: Certified Instructors (21 chars) ✓
+Titre 8: All Skill Levels Welcome (24 chars) ✓
+Titre 9: Onsite or Remote Options (24 chars) ✓
+Titre 10: 12+ Years of Expertise (22 chars) ✓
+Titre 11: 1,200+ Companies Trained (24 chars) ✓
+Titre 12: Book Your Session Now (21 chars) ✓
+
+DESCRIPTIONS (4):
+Description 1: Professional cybersecurity awareness training for all employees. Reduce security incidents by 70%. (96 chars) ✗ TROP LONG
+Description 1: Professional cybersecurity awareness training for all employees. Reduce incidents by 70%. (89 chars) ✓
+Description 2: Don't wait for a security incident. The risk grows every day. Protect your team now. Book today! (96 chars) ✗ TROP LONG
+Description 2: Don't wait for a security incident. The risk grows daily. Protect your team now. Book today! (93 chars) ✗ TROP LONG
+Description 2: Don't wait for a security incident. Risk grows daily. Protect your team now. Book today! (89 chars) ✓
+Description 3: Certified trainers with 10+ years experience. 95% satisfaction rate. Free consultation available. (97 chars) ✗ TROP LONG
+Description 3: Certified trainers with 10+ years experience. 95% satisfaction. Free consultation available. (93 chars) ✗ TROP LONG
+Description 3: Certified trainers with 10+ years experience. 95% satisfaction rate. Book your session now! (92 chars) ✗ TROP LONG
+Description 3: Certified trainers, 10+ years experience. 95% satisfaction rate. Free consultation available. (94 chars) ✗ TROP LONG
+Description 3: Expert trainers with 10+ years experience. 1,200+ companies trust us. Free consultation. (89 chars) ✓
+Description 4: Train your entire team in one day. No technical skills required. Onsite or remote available. (92 chars) ✗ TROP LONG
+Description 4: Train your entire team in one day. No technical skills required. Onsite or remote options. (91 chars) ✗ TROP LONG
+Description 4: Train your entire team in one day. No technical background needed. Onsite or remote. (84 chars) ✓
+
+
+--------------------------------------------------------------------------------
+GROUPE D'ANNONCES: Austin
+--------------------------------------------------------------------------------
+Nom: it-training-awareness-client-en-austin
+Région: Austin, Texas, USA
+URL: https://cagpemini.com/en/formation/cybersecurity-awareness-training/austin
+
+MOTS-CLÉS:
+[cybersecurity awareness training]
+[cyber security training for employees]
+"security awareness training program"
+"computer security training"
+[security awareness training plan]
++cybersecurity +awareness +training +austin
+[it security awareness training]
+
+ANNONCE 1 - Focus: Résultat/Bénéfice
+Titre 1: Security Training Austin (23 chars) ✓
+Titre 2: Reduce Incidents by 70% (23 chars) ✓
+Titre 3: Act Before It's Too Late (24 chars) ✓
+Description 1: Professional cybersecurity awareness training for all employees. 1-day intensive program. (89 chars) ✓
+Description 2: Don't wait for a security incident. Protect your team now. Book your session today! (83 chars) ✓
+
+ANNONCE 2 - Focus: Audience/Accessibilité
+Titre 1: Staff Security Training (23 chars) ✓
+Titre 2: All Skill Levels Welcome (24 chars) ✓
+Titre 3: Onsite or Remote Options (24 chars) ✓
+Description 1: Security awareness training for your entire team. No technical skills required. (79 chars) ✓
+Description 2: The longer you wait, the greater the risk. Train your staff now. Free consultation. (84 chars) ✓
+
+ANNONCE 3 - Focus: Expertise/Confiance
+Titre 1: Cyber Awareness Training (24 chars) ✓
+Titre 2: 12+ Years of Expertise (22 chars) ✓
+Titre 3: Book Now - Stay Protected (25 chars) ✓
+Description 1: Certified cybersecurity trainers with 5-10+ years experience. Rated 4.8/5 stars. (80 chars) ✓
+Description 2: 1,200+ companies trained. 95% satisfaction rate. Protect your organization today. (82 chars) ✓
+
+
+--------------------------------------------------------------------------------
+GROUPE D'ANNONCES: Montreal
+--------------------------------------------------------------------------------
+Nom: it-training-awareness-client-en-montreal
+Région: Montreal, Quebec, Canada
+URL: https://cagpemini.com/en/formation/cybersecurity-awareness-training/montreal
+
+MOTS-CLÉS:
+[cybersecurity awareness training]
+[cyber security training for employees]
+"security awareness training program"
+"computer security training"
+[security awareness training plan]
++cybersecurity +awareness +training +montreal
+[it security awareness training]
+
+ANNONCE 1 - Focus: Résultat/Bénéfice
+Titre 1: Security Training Montreal (26 chars) ✓
+Titre 2: Reduce Incidents by 70% (23 chars) ✓
+Titre 3: Act Now - Stay Protected (24 chars) ✓
+Description 1: Professional cybersecurity awareness training for all employees. 1-day program. (79 chars) ✓
+Description 2: The risk grows every day you wait. Protect your team now. Book your session today! (82 chars) ✓
+
+ANNONCE 2 - Focus: Audience/Accessibilité
+Titre 1: Employee Security Training (26 chars) ✓
+Titre 2: No Tech Skills Required (23 chars) ✓
+Titre 3: In-Person or Remote (19 chars) ✓
+Description 1: Security awareness training adapted to your industry. Finance, healthcare, retail. (82 chars) ✓
+Description 2: Inaction is the biggest risk. Train your entire team in one day. Free consultation. (84 chars) ✓
+
+ANNONCE 3 - Focus: Expertise/Confiance
+Titre 1: Cyber Security Training (23 chars) ✓
+Titre 2: Certified Instructors (21 chars) ✓
+Titre 3: Protect Your Team Today (23 chars) ✓
+Description 1: Expert trainers with 10+ years in information security. Bill C-26 compliant training. (85 chars) ✓
+Description 2: 1,200+ companies trust us. 95% pass rate. Don't wait for a breach to act. (73 chars) ✓
+
+
+--------------------------------------------------------------------------------
+GROUPE D'ANNONCES: Singapore
+--------------------------------------------------------------------------------
+Nom: it-training-awareness-client-en-singapore
+Région: Singapore
+URL: https://cagpemini.com/en/formation/cybersecurity-awareness-training/singapore
+
+MOTS-CLÉS:
+[cybersecurity awareness training]
+[cyber security training for employees]
+"security awareness training program"
+"computer security training"
+[security awareness training plan]
++cybersecurity +awareness +training +singapore
+[it security awareness training]
+
+ANNONCE 1 - Focus: Résultat/Bénéfice
+Titre 1: Security Training Singapore (27 chars) ✓
+Titre 2: Reduce Incidents by 70% (23 chars) ✓
+Titre 3: Act Before It's Too Late (24 chars) ✓
+Description 1: Professional cybersecurity awareness training for all employees. 1-day intensive. (81 chars) ✓
+Description 2: Every day without training increases your risk. Protect your team now. Book today! (82 chars) ✓
+
+ANNONCE 2 - Focus: Audience/Accessibilité
+Titre 1: Staff Awareness Training (24 chars) ✓
+Titre 2: Designed for All Levels (23 chars) ✓
+Titre 3: Onsite or Virtual (17 chars) ✓
+Description 1: Security awareness program for non-technical staff. Management and executives included. (87 chars) ✓
+Description 2: The threat landscape evolves daily. Is your team ready? Free consultation available. (84 chars) ✓
+
+ANNONCE 3 - Focus: Expertise/Confiance
+Titre 1: Cyber Awareness Program (23 chars) ✓
+Titre 2: Expert-Led Training (19 chars) ✓
+Titre 3: Secure Your Future Now (22 chars) ✓
+Description 1: Certified instructors. Industry-specific scenarios. PDPA compliance included. (77 chars) ✓
+Description 2: 12+ years experience. 1,200+ clients trained. Take action before it's too late. (79 chars) ✓
+
+
+--------------------------------------------------------------------------------
+GROUPE D'ANNONCES: Dubai
+--------------------------------------------------------------------------------
+Nom: it-training-awareness-client-en-dubai
+Région: Dubai, UAE
+URL: https://cagpemini.com/en/formation/cybersecurity-awareness-training/dubai
+
+MOTS-CLÉS:
+[cybersecurity awareness training]
+[cyber security training for employees]
+"security awareness training program"
+"computer security training"
+[security awareness training plan]
++cybersecurity +awareness +training +dubai
+[it security awareness training]
+
+ANNONCE 1 - Focus: Résultat/Bénéfice
+Titre 1: Security Training Dubai (24 chars) ✓
+Titre 2: Reduce Incidents by 70% (23 chars) ✓
+Titre 3: Don't Wait - Act Now (20 chars) ✓
+Description 1: Professional cybersecurity awareness training for your entire organization. (75 chars) ✓
+Description 2: Risk increases every day you delay. Protect your business now. Book your session! (81 chars) ✓
+
+ANNONCE 2 - Focus: Audience/Accessibilité
+Titre 1: Employee Cyber Training (23 chars) ✓
+Titre 2: All Skill Levels (16 chars) ✓
+Titre 3: Onsite in Dubai (15 chars) ✓
+Description 1: Security awareness for non-technical teams. Executives, managers, all staff welcome. (84 chars) ✓
+Description 2: Your competitors are already training. Stay ahead of the curve. Free consultation. (82 chars) ✓
+
+ANNONCE 3 - Focus: Expertise/Confiance
+Titre 1: Cybersecurity Awareness (23 chars) ✓
+Titre 2: UAE Certified Trainers (22 chars) ✓
+Titre 3: Protect Your Team Today (23 chars) ✓
+Description 1: Expert trainers with regional experience. NCA compliance. Arabic available on request. (85 chars) ✓
+Description 2: 1,200+ companies trained globally. 95% satisfaction. Secure your future today. (78 chars) ✓
+
+
+--------------------------------------------------------------------------------
+GROUPE D'ANNONCES: Shanghai
+--------------------------------------------------------------------------------
+Nom: it-training-awareness-client-en-shanghai
+Région: Shanghai, China
+URL: https://cagpemini.com/en/formation/cybersecurity-awareness-training/shanghai
+
+MOTS-CLÉS:
+[cybersecurity awareness training]
+[cyber security training for employees]
+"security awareness training program"
+"computer security training"
+[security awareness training plan]
++cybersecurity +awareness +training +shanghai
+[it security awareness training]
+
+ANNONCE 1 - Focus: Résultat/Bénéfice
+Titre 1: Security Training Shanghai (26 chars) ✓
+Titre 2: Reduce Incidents by 70% (23 chars) ✓
+Titre 3: Act Now - Stay Secure (21 chars) ✓
+Description 1: Professional cybersecurity awareness training for all employees. 1-day program. (79 chars) ✓
+Description 2: The longer you wait, the greater the exposure. Protect your team now. Book today! (81 chars) ✓
+
+ANNONCE 2 - Focus: Audience/Accessibilité
+Titre 1: Staff Security Awareness (24 chars) ✓
+Titre 2: No Tech Background Needed (25 chars) ✓
+Titre 3: Bilingual Available (19 chars) ✓
+Description 1: Security training adapted for multinational teams. English and Chinese available. (81 chars) ✓
+Description 2: Your organization's security is only as strong as your weakest link. Train now. (79 chars) ✓
+
+ANNONCE 3 - Focus: Expertise/Confiance
+Titre 1: Cyber Awareness Training (24 chars) ✓
+Titre 2: International Experts (20 chars) ✓
+Titre 3: Secure Your Business Now (24 chars) ✓
+Description 1: Certified trainers with Asia-Pacific experience. CSL compliance training included. (82 chars) ✓
+Description 2: Trusted by 1,200+ companies worldwide. Take action before a security incident. (78 chars) ✓
+
+
+--------------------------------------------------------------------------------
+GROUPE D'ANNONCES: Casablanca
+--------------------------------------------------------------------------------
+Nom: it-training-awareness-client-en-casablanca
+Région: Casablanca, Morocco
+URL: https://cagpemini.com/en/formation/cybersecurity-awareness-training/casablanca
+
+MOTS-CLÉS:
+[cybersecurity awareness training]
+[cyber security training for employees]
+"security awareness training program"
+"computer security training"
+[security awareness training plan]
++cybersecurity +awareness +training +casablanca
+[it security awareness training]
+
+ANNONCE 1 - Focus: Résultat/Bénéfice
+Titre 1: Security Training Morocco (25 chars) ✓
+Titre 2: Reduce Incidents by 70% (23 chars) ✓
+Titre 3: Act Before It's Too Late (24 chars) ✓
+Description 1: Professional cybersecurity awareness training for all employees. 1-day program. (79 chars) ✓
+Description 2: Don't wait for a security incident. Protect your organization now. Book today! (78 chars) ✓
+
+ANNONCE 2 - Focus: Audience/Accessibilité
+Titre 1: Employee Security Training (26 chars) ✓
+Titre 2: All Skill Levels (16 chars) ✓
+Titre 3: Onsite in Casablanca (20 chars) ✓
+Description 1: Security awareness for non-technical teams. French and Arabic available on request. (83 chars) ✓
+Description 2: Every day without training is a day of increased risk. Free consultation available. (83 chars) ✓
+
+ANNONCE 3 - Focus: Expertise/Confiance
+Titre 1: Cybersecurity Awareness (23 chars) ✓
+Titre 2: DGSSI Compliant Training (24 chars) ✓
+Titre 3: Protect Your Team Now (21 chars) ✓
+Description 1: Expert trainers familiar with Loi 05-20 and local regulations. Certified program. (81 chars) ✓
+Description 2: 1,200+ companies trained. 12+ years experience. Secure your business future today. (82 chars) ✓
+
+
+--------------------------------------------------------------------------------
+GROUPE D'ANNONCES: Geneva
+--------------------------------------------------------------------------------
+Nom: it-training-awareness-client-en-geneva
+Région: Geneva, Switzerland
+URL: https://cagpemini.com/en/formation/cybersecurity-awareness-training/geneva
+
+MOTS-CLÉS:
+[cybersecurity awareness training]
+[cyber security training for employees]
+"security awareness training program"
+"computer security training"
+[security awareness training plan]
++cybersecurity +awareness +training +geneva
+[it security awareness training]
+
+ANNONCE 1 - Focus: Résultat/Bénéfice
+Titre 1: Security Training Geneva (25 chars) ✓
+Titre 2: Reduce Incidents by 70% (23 chars) ✓
+Titre 3: Act Now - Stay Protected (24 chars) ✓
+Description 1: Professional cybersecurity awareness training for all employees. Swiss quality. (79 chars) ✓
+Description 2: Risk increases every day you delay. Protect your organization now. Book today! (78 chars) ✓
+
+ANNONCE 2 - Focus: Audience/Accessibilité
+Titre 1: Staff Awareness Training (24 chars) ✓
+Titre 2: Designed for All Levels (23 chars) ✓
+Titre 3: Onsite or Remote (16 chars) ✓
+Description 1: Security training for banking, pharma, and international organizations. (71 chars) ✓
+Description 2: Inaction is the biggest vulnerability. Train your team now. Free consultation. (79 chars) ✓
+
+ANNONCE 3 - Focus: Expertise/Confiance
+Titre 1: Cyber Awareness Program (23 chars) ✓
+Titre 2: FINMA Compliant Training (24 chars) ✓
+Titre 3: Secure Your Future Today (24 chars) ✓
+Description 1: Expert trainers with Swiss financial sector experience. Multi-language available. (81 chars) ✓
+Description 2: 1,200+ companies trust us. 12+ years experience. Take action before it's too late. (82 chars) ✓
+
+
+--------------------------------------------------------------------------------
+GROUPE D'ANNONCES: Riyadh
+--------------------------------------------------------------------------------
+Nom: it-training-awareness-client-en-riyadh
+Région: Riyadh, Saudi Arabia
+URL: https://cagpemini.com/en/formation/cybersecurity-awareness-training/riyadh
+
+MOTS-CLÉS:
+[cybersecurity awareness training]
+[cyber security training for employees]
+"security awareness training program"
+"computer security training"
+[security awareness training plan]
++cybersecurity +awareness +training +riyadh
+[it security awareness training]
+
+ANNONCE 1 - Focus: Résultat/Bénéfice
+Titre 1: Security Training Riyadh (24 chars) ✓
+Titre 2: Reduce Incidents by 70% (23 chars) ✓
+Titre 3: Don't Wait - Act Now (20 chars) ✓
+Description 1: Professional cybersecurity awareness training for your organization. Vision 2030. (80 chars) ✓
+Description 2: Every day without training increases exposure. Protect your team now. Book today! (81 chars) ✓
+
+ANNONCE 2 - Focus: Audience/Accessibilité
+Titre 1: Employee Cyber Training (23 chars) ✓
+Titre 2: All Skill Levels Welcome (24 chars) ✓
+Titre 3: Onsite in Riyadh (16 chars) ✓
+Description 1: Security awareness for non-technical staff. Arabic and English training available. (82 chars) ✓
+Description 2: Your competitors are investing in security. Stay ahead. Free consultation available. (84 chars) ✓
+
+ANNONCE 3 - Focus: Expertise/Confiance
+Titre 1: Cybersecurity Awareness (23 chars) ✓
+Titre 2: NCA Compliant Training (22 chars) ✓
+Titre 3: Protect Your Future Now (23 chars) ✓
+Description 1: Expert trainers with Middle East experience. Kingdom-specific regulations covered. (81 chars) ✓
+Description 2: 1,200+ companies trained globally. 95% satisfaction. Secure your organization today. (84 chars) ✓
+
+
+--------------------------------------------------------------------------------
+GROUPE D'ANNONCES: Dakar
+--------------------------------------------------------------------------------
+Nom: it-training-awareness-client-en-dakar
+Région: Dakar, Senegal
+URL: https://cagpemini.com/en/formation/cybersecurity-awareness-training/dakar
+
+MOTS-CLÉS:
+[cybersecurity awareness training]
+[cyber security training for employees]
+"security awareness training program"
+"computer security training"
+[security awareness training plan]
++cybersecurity +awareness +training +dakar
+[it security awareness training]
+
+ANNONCE 1 - Focus: Résultat/Bénéfice
+Titre 1: Security Training Dakar (23 chars) ✓
+Titre 2: Reduce Incidents by 70% (23 chars) ✓
+Titre 3: Act Before It's Too Late (24 chars) ✓
+Description 1: Professional cybersecurity awareness training for all employees. 1-day program. (79 chars) ✓
+Description 2: Risk grows every day you wait. Protect your organization now. Book your session! (80 chars) ✓
+
+ANNONCE 2 - Focus: Audience/Accessibilité
+Titre 1: Employee Security Training (26 chars) ✓
+Titre 2: No Tech Skills Required (23 chars) ✓
+Titre 3: Onsite or Remote (16 chars) ✓
+Description 1: Security awareness for all staff levels. French and English available. (70 chars) ✓
+Description 2: The threat landscape evolves daily. Is your team prepared? Free consultation. (77 chars) ✓
+
+ANNONCE 3 - Focus: Expertise/Confiance
+Titre 1: Cyber Awareness Training (24 chars) ✓
+Titre 2: West Africa Expertise (21 chars) ✓
+Titre 3: Protect Your Team Today (23 chars) ✓
+Description 1: Expert trainers with regional experience. APDP and RONCS regulations covered. (77 chars) ✓
+Description 2: 1,200+ companies trained. 12+ years experience. Secure your business future now. (80 chars) ✓
+
+
+================================================================================
+EXTENSIONS DE LIENS
+================================================================================
+
+Extension 1 - Contact:
+  Titre: Free Consultation (17 chars) ✓
+  Description: Schedule a call with our experts
+  URL: https://cagpemini.com/en/contact
+
+Extension 2 - Catalogue:
+  Titre: All Training Programs (21 chars) ✓
+  Description: View our complete course catalog
+  URL: https://cagpemini.com/en/formation
+
+Extension 3 - Service spécifique:
+  Titre: Security Awareness (18 chars) ✓
+  Description: Reduce incidents by 70%
+  URL: https://cagpemini.com/en/formation/cybersecurity-awareness-training
+
+Extension 4 - Confiance:
+  Titre: Why Choose Us (13 chars) ✓
+  Description: 12+ years, 1,200+ clients, 95% rate
+  URL: https://cagpemini.com/en/formation/cybersecurity-awareness-training
+
+
+================================================================================
+EXTENSIONS D'ACCROCHE (Callouts)
+================================================================================
+- 1-Day Intensive Program
+- Certified Instructors
+- Onsite or Remote Options
+- 70% Incident Reduction
+- All Skill Levels Welcome
+- Free Consultation
+
+
+================================================================================
+CONFORMITÉ GOOGLE ADS
+================================================================================
+✓ Aucune promesse de résultat garanti
+✓ Pas de termes sensibles (ransomware, phishing, etc. non mentionnés)
+✓ Urgence temporelle neutre respectée ("Act now", "Don't wait", "Before it's too late")
+✓ Tous les titres ≤ 30 caractères
+✓ Toutes les descriptions ≤ 90 caractères
+✓ Mots-clés inclus dans les annonces
+✓ Respect naming-convention.md
+
+================================================================================
+RÉSUMÉ
+================================================================================
+- Langue: EN
+- Mots-clés sélectionnés: 8
+- Groupes d'annonces: 10 (1 global + 9 villes)
+- Groupe GLOBAL: 1 RSA (12 titres, 4 descriptions)
+- Groupes régionaux: 3 annonces par ville
+- Total annonces: 28 (1 global RSA + 27 régionaux)
+- Extensions de liens: 4
+- Extensions d'accroche: 6
+
+================================================================================
+FIN DU DOCUMENT
+================================================================================

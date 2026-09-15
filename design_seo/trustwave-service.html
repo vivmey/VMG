@@ -1,0 +1,2079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managed Detection and Response | Trustwave</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            font-size: 1.06rem;
+            font-weight: 300;
+            line-height: 1.594rem;
+            color: #fafafa;
+            background: #000;
+            overflow-x: hidden;
+        }
+
+        /* Top Announcement Bar */
+        .announcement-bar {
+            background: rgba(15, 15, 20, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1001;
+            transition: transform 0.3s ease;
+        }
+
+        .announcement-content {
+            max-width: 90rem;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.875rem;
+        }
+
+        .announcement-left {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .announcement-icon {
+            width: 1.25rem;
+            height: 1.25rem;
+            border: 2px solid #b10c2a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #b10c2a;
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+
+        .announcement-text {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .announcement-link {
+            color: #b10c2a;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .announcement-right {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .announcement-right a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .announcement-right a:hover {
+            color: #fff;
+        }
+
+        /* Header Navigation */
+        .header {
+            position: fixed;
+            top: 2.5rem;
+            left: 0;
+            right: 0;
+            background: transparent;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            background: rgba(15, 15, 20, 0.98);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            top: 0;
+            padding-top: 0.5rem;
+        }
+
+        .header-content {
+            max-width: 90rem;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 2rem;
+            height: 2rem;
+            background: #fff;
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+        }
+
+        .logo-subtitle {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 400;
+        }
+
+        .nav-center {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-center a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 400;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-center a::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #a6ecfc;
+            transition: width 0.3s ease;
+        }
+
+        .nav-center a:hover {
+            color: #a6ecfc;
+        }
+
+        .nav-center a:hover::after {
+            width: 100%;
+        }
+
+        .nav-center a.active {
+            color: #a6ecfc;
+        }
+
+        .nav-center a.active::after {
+            width: 100%;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .search-icon {
+            color: #fff;
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .search-icon:hover {
+            color: #a6ecfc;
+        }
+
+        .btn-secondary {
+            padding: 0.625rem 1.5rem;
+            background: transparent;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-primary {
+            padding: 0.625rem 1.5rem;
+            background: #a6ecfc;
+            color: #000;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: #8ae0f8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(166, 236, 252, 0.4);
+        }
+
+        /* Service Hero Section */
+        .service-hero {
+            position: relative;
+            min-height: 75vh;
+            padding: 10rem 2rem 4rem;
+            background: linear-gradient(135deg, #1a0a0f 0%, #2b0a1a 50%, #1a0a0f 100%);
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .service-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(177, 12, 42, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(177, 12, 42, 0.15) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .service-hero-wireframe {
+            position: absolute;
+            left: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 500px;
+            height: 300px;
+            z-index: 2;
+            opacity: 0.3;
+        }
+
+        .service-hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 90rem;
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .service-hero-left {
+            max-width: 600px;
+        }
+
+        .service-category {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .service-hero-title {
+            font-size: 3.5rem;
+            font-weight: 300;
+            line-height: 4rem;
+            color: #fff;
+            margin-bottom: 2rem;
+        }
+
+        .service-hero-ctas {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .service-cta-primary {
+            padding: 0.875rem 2rem;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .service-cta-primary:hover {
+            background: #e0e0e0;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .service-cta-secondary {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s ease;
+        }
+
+        .service-cta-secondary:hover {
+            gap: 0.75rem;
+        }
+
+        .service-hero-right {
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding-top: 1rem;
+        }
+
+        .service-hero-image-container {
+            position: relative;
+            margin-right: -2rem;
+        }
+
+        .service-hero-image {
+            width: 450px;
+            height: 280px;
+            border-radius: 50% 50% 0 0;
+            object-fit: cover;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            display: block;
+        }
+
+        .service-metrics-card {
+            position: absolute;
+            bottom: 2rem;
+            left: -3rem;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 1.75rem 2.25rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        .metrics-row {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .metric-item {
+            text-align: center;
+        }
+
+        .metric-number {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #000;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: capitalize;
+        }
+
+        .metric-critical {
+            color: #ff9800;
+        }
+
+        .metric-high {
+            color: #999;
+        }
+
+        .metric-medium {
+            color: #ccc;
+        }
+
+        .metric-low {
+            color: #e0e0e0;
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 5rem 2rem;
+            background: #fafafa;
+        }
+
+        .features-container {
+            max-width: 90rem;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .features-left {
+            color: #000;
+        }
+
+        .features-title {
+            font-size: 2.75rem;
+            font-weight: 300;
+            line-height: 3.4rem;
+            margin-bottom: 2rem;
+        }
+
+        .features-description {
+            font-size: 1.05rem;
+            line-height: 1.7rem;
+            color: #333;
+            margin-bottom: 3rem;
+        }
+
+        .features-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .feature-bullet {
+            width: 8px;
+            height: 8px;
+            background: #999;
+            border-radius: 50%;
+            margin-top: 0.5rem;
+            flex-shrink: 0;
+        }
+
+        .feature-text {
+            font-size: 1.05rem;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .features-download {
+            color: #b10c2a;
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s ease;
+        }
+
+        .features-download:hover {
+            gap: 0.75rem;
+        }
+
+        .features-right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2b0a1a 100%);
+            padding: 2.5rem 2rem;
+            border-radius: 1rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(177, 12, 42, 0.1) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(177, 12, 42, 0.3);
+        }
+
+        .feature-card-title {
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 1.6rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card-icon {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .feature-expand {
+            width: 2rem;
+            height: 2rem;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1.5rem;
+            font-weight: 300;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover .feature-expand {
+            border-color: #fff;
+            color: #fff;
+            transform: rotate(90deg);
+        }
+
+        .feature-card.has-icon {
+            position: relative;
+        }
+
+        .feature-card.has-icon::after {
+            content: '';
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            width: 40px;
+            height: 40px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M20 5 L25 15 L20 10 L15 15 Z M20 35 L25 25 L20 30 L15 25 Z M5 20 L15 25 L10 20 L15 15 Z M35 20 L25 25 L30 20 L25 15 Z M20 20 m-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0' stroke='rgba(255,255,255,0.15)' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.3;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: #17191c;
+            padding: 5rem 2rem;
+        }
+
+        .stats-container {
+            max-width: 90rem;
+            margin: 0 auto;
+        }
+
+        .stats-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .stats-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 1rem;
+        }
+
+        .stats-title {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 3.8rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 200;
+            color: #fff;
+            line-height: 1;
+            margin-bottom: 0.75rem;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.4;
+        }
+
+        .stats-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stats-logo-item {
+            height: 40px;
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .stats-logo-item:hover {
+            opacity: 1;
+        }
+
+        .stats-logo-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 2rem;
+            background: #fafafa;
+        }
+
+        .cta-container {
+            max-width: 90rem;
+            margin: 0 auto;
+        }
+
+        .cta-content {
+            background: linear-gradient(135deg, #2b1a1f 0%, #1a1d23 100%);
+            border-radius: 2rem;
+            padding: 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(177, 12, 42, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(177, 12, 42, 0.1) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .cta-inner {
+            position: relative;
+            z-index: 10;
+        }
+
+        .cta-title {
+            font-size: 2.75rem;
+            font-weight: 300;
+            line-height: 3.4rem;
+            color: #fff;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-description {
+            font-size: 1.1rem;
+            line-height: 1.8rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cta-button-primary {
+            padding: 0.875rem 2.5rem;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button-primary:hover {
+            background: #e0e0e0;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .cta-button-secondary {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s ease;
+        }
+
+        .cta-button-secondary:hover {
+            gap: 0.75rem;
+        }
+
+        /* Partner Section */
+        .partner-section {
+            padding: 5rem 2rem 6rem;
+            background: #fafafa;
+        }
+
+        .partner-container {
+            max-width: 90rem;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .partner-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            line-height: 3.2rem;
+            color: #000;
+            margin-bottom: 4rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .partner-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .partner-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .partner-logo-item {
+            height: 45px;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+            object-fit: contain;
+        }
+
+        .partner-logo-item:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .partner-logo-text {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #333;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .partner-logo-text:hover {
+            color: #000;
+            transform: scale(1.05);
+        }
+
+        /* Tabs Section */
+        .tabs-section {
+            padding: 5rem 2rem;
+            background: #fafafa;
+        }
+
+        .tabs-container {
+            max-width: 90rem;
+            margin: 0 auto;
+        }
+
+        .tabs-content-wrapper {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2b1a1f 100%);
+            border-radius: 2rem;
+            padding: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tabs-nav {
+            display: flex;
+            gap: 0;
+            margin-bottom: 3rem;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 1.25rem 2rem;
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.6);
+            font-family: 'Inter', Arial, sans-serif;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .tab-button::before {
+            content: '•';
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .tab-button:hover {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .tab-button.active {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+
+        .tab-button.active::before {
+            opacity: 1;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Tab 1: Rapid Onboarding */
+        .onboarding-content {
+            color: #fff;
+        }
+
+        .onboarding-header {
+            margin-bottom: 3rem;
+        }
+
+        .onboarding-title {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 3.6rem;
+            margin-bottom: 2rem;
+        }
+
+        .onboarding-description {
+            font-size: 1.05rem;
+            line-height: 1.7rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 700px;
+            margin-bottom: 2.5rem;
+        }
+
+        .onboarding-download {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s ease;
+        }
+
+        .onboarding-download:hover {
+            gap: 0.75rem;
+            color: #fff;
+        }
+
+        .phases-wrapper {
+            margin-top: 4rem;
+        }
+
+        .phases-timeline {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 3rem;
+        }
+
+        .timeline-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-label {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            position: relative;
+        }
+
+        .timeline-label::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -1rem;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .timeline-label.technical::after {
+            background: #b10c2a;
+        }
+
+        .phase-item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            position: relative;
+        }
+
+        .phase-number {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        .phase-icon-wrapper {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .phase-item.technical .phase-icon-wrapper {
+            background: #b10c2a;
+        }
+
+        .phase-icon {
+            width: 40px;
+            height: 40px;
+            stroke: #fff;
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .phase-arrow {
+            width: 40px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.3);
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .phase-arrow::after {
+            content: '';
+            position: absolute;
+            right: -6px;
+            top: -3px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+        }
+
+        .phase-item.technical + .phase-arrow {
+            background: #b10c2a;
+        }
+
+        .phase-item.technical + .phase-arrow::after {
+            border-left-color: #b10c2a;
+        }
+
+        .phase-name {
+            font-size: 1rem;
+            color: #fff;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        /* Tab 2: Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        .comparison-table thead th {
+            padding: 1.5rem 2rem;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #fff;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .comparison-table thead th:first-child {
+            text-align: left;
+        }
+
+        .trustwave-logo-cell {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .trustwave-mini-logo {
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+        }
+
+        .comparison-table tbody tr {
+            transition: background 0.3s ease;
+        }
+
+        .comparison-table tbody tr:nth-child(even) {
+            background: rgba(177, 12, 42, 0.15);
+        }
+
+        .comparison-table tbody tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .comparison-table tbody td {
+            padding: 1.5rem 2rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .comparison-table tbody td:first-child {
+            font-weight: 400;
+        }
+
+        .comparison-cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .check-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .check-full {
+            background: #fff;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .check-empty {
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+        }
+
+        .check-half {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: linear-gradient(90deg, #fff 50%, transparent 50%);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            position: relative;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 5rem 2rem;
+            background: #fafafa;
+        }
+
+        .faq-container {
+            max-width: 90rem;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 6rem;
+            align-items: flex-start;
+        }
+
+        .faq-title {
+            font-size: 4rem;
+            font-weight: 300;
+            color: #000;
+            line-height: 1;
+            position: sticky;
+            top: 120px;
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question {
+            padding: 2rem 3rem 2rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            position: relative;
+        }
+
+        .faq-question:hover {
+            padding-left: 1rem;
+        }
+
+        .faq-question-text {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #000;
+            line-height: 1.6;
+            flex: 1;
+        }
+
+        .faq-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-icon svg {
+            width: 20px;
+            height: 20px;
+            stroke: #000;
+            stroke-width: 2;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding-bottom: 2rem;
+        }
+
+        .faq-answer-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #555;
+            padding-right: 3rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .service-hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .service-hero-right {
+                justify-content: center;
+            }
+
+            .features-container {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
+
+            .features-right {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .service-hero-title {
+                font-size: 2.5rem;
+                line-height: 3rem;
+            }
+
+            .features-title,
+            .stats-title,
+            .cta-title {
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+
+            .features-right {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .service-metrics-card {
+                position: static;
+                margin-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <div class="announcement-left">
+                <span class="announcement-icon">!</span>
+                <span class="announcement-text">
+                    LevelBlue Completes Acquisition of Trustwave to Form the World's Largest Pure-Play MSSP.
+                    <a href="#" class="announcement-link">Learn More</a>
+                </span>
+            </div>
+            <div class="announcement-right">
+                <a href="#government">Government</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#login">Login</a>
+                <a href="#incident">Incident Response</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header" id="mainHeader">
+        <div class="header-content">
+            <div class="logo-container">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <div>
+                        <div>Trustwave</div>
+                        <div class="logo-subtitle">A LevelBlue Company</div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-center">
+                    <li><a href="#services" class="active">Services</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#why">Why Trustwave</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <a href="#rfp" class="btn-secondary">Submit RFP</a>
+                <a href="#demo" class="btn-primary">Request a Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Service Hero Section -->
+    <section class="service-hero">
+        <!-- Wireframe Background -->
+        <svg class="service-hero-wireframe" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+            <!-- 3D Wireframe Wave Pattern -->
+            <g stroke="#b10c2a" stroke-width="1" fill="none">
+                <path d="M50,150 Q100,100 150,150 T250,150 T350,150 T450,150" opacity="0.8"/>
+                <path d="M50,140 Q100,90 150,140 T250,140 T350,140 T450,140" opacity="0.6"/>
+                <path d="M50,160 Q100,110 150,160 T250,160 T350,160 T450,160" opacity="0.6"/>
+                <path d="M50,130 Q100,80 150,130 T250,130 T350,130 T450,130" opacity="0.4"/>
+                <path d="M50,170 Q100,120 150,170 T250,170 T350,170 T450,170" opacity="0.4"/>
+
+                <!-- Vertical connections -->
+                <line x1="150" y1="130" x2="150" y2="170" opacity="0.3"/>
+                <line x1="250" y1="130" x2="250" y2="170" opacity="0.3"/>
+                <line x1="350" y1="130" x2="350" y2="170" opacity="0.3"/>
+            </g>
+        </svg>
+
+        <div class="service-hero-content">
+            <div class="service-hero-left">
+                <div class="service-category">MANAGED DETECTION AND RESPONSE</div>
+                <h1 class="service-hero-title">
+                    Defend confidently.<br>
+                    Respond precisely.
+                </h1>
+                <div class="service-hero-ctas">
+                    <a href="#demo" class="service-cta-primary">Request a Demo</a>
+                    <a href="#pricing" class="service-cta-secondary">
+                        Request Pricing →
+                    </a>
+                </div>
+            </div>
+
+            <div class="service-hero-right">
+                <div class="service-hero-image-container">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=450&h=280&fit=crop"
+                         alt="Circuit Board Technology"
+                         class="service-hero-image">
+
+                    <div class="service-metrics-card">
+                        <div class="metrics-row">
+                            <div class="metric-item">
+                                <div class="metric-number metric-critical">1</div>
+                                <div class="metric-label">Critical</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-number metric-high">0</div>
+                                <div class="metric-label">High</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-number metric-medium">3</div>
+                                <div class="metric-label">Medium</div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-number metric-low">1</div>
+                                <div class="metric-label">Low</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-container">
+            <div class="features-left">
+                <h2 class="features-title">
+                    Eliminate threats quickly and precisely with proven MDR.
+                </h2>
+                <p class="features-description">
+                    Trustwave leverages your existing security infrastructure to maximize your investment and get the most from your tools.
+                </p>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-bullet"></div>
+                        <div class="feature-text">Stop active threats 24/7/365 with global coverage</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-bullet"></div>
+                        <div class="feature-text">Enhance your team with tenured cybersecurity experts</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-bullet"></div>
+                        <div class="feature-text">Reduce risk with a stronger defensive posture</div>
+                    </div>
+                </div>
+                <a href="#datasheet" class="features-download">
+                    Download Data Sheet ↓
+                </a>
+            </div>
+
+            <div class="features-right">
+                <div class="feature-card has-icon">
+                    <div class="feature-card-title">The Right Telemetry at the Right Time</div>
+                    <div class="feature-card-icon">
+                        <div class="feature-expand">+</div>
+                    </div>
+                </div>
+
+                <div class="feature-card has-icon">
+                    <div class="feature-card-title">Elite SpiderLabs Threat Intelligence</div>
+                    <div class="feature-card-icon">
+                        <div class="feature-expand">+</div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-title">Known & Unknown Threat Detection</div>
+                    <div class="feature-card-icon">
+                        <div class="feature-expand">+</div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-title">Thorough Incident Investigation</div>
+                    <div class="feature-card-icon">
+                        <div class="feature-expand">+</div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-title">Rapid & Effective Responses</div>
+                    <div class="feature-card-icon">
+                        <div class="feature-expand">+</div>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-title">Client-Informed Decisions</div>
+                    <div class="feature-card-icon">
+                        <div class="feature-expand">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stats-header">
+                <div class="stats-label">ELITE SPIDERLABS THREAT INTELLIGENCE</div>
+                <h2 class="stats-title">
+                    The most recognized cybersecurity leader by industry analysts.
+                </h2>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">Billions</div>
+                    <div class="stat-label">Security events analyzed daily</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">200K+</div>
+                    <div class="stat-label">Threats blocked annually</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">30K</div>
+                    <div class="stat-label">Incident response engagements</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2M+</div>
+                    <div class="stat-label">Assets protected globally</div>
+                </div>
+            </div>
+
+            <div class="stats-logos">
+                <svg class="stats-logo-item" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                    <text x="0" y="30" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="rgba(255,255,255,0.6)">Gartner</text>
+                </svg>
+                <svg class="stats-logo-item" height="40" viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5" y="12" width="12" height="2.5" fill="rgba(255,255,255,0.6)" rx="1.25"/>
+                    <rect x="5" y="18" width="12" height="2.5" fill="rgba(255,255,255,0.6)" rx="1.25"/>
+                    <rect x="5" y="24" width="12" height="2.5" fill="rgba(255,255,255,0.6)" rx="1.25"/>
+                    <text x="22" y="27" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="rgba(255,255,255,0.6)">IDC</text>
+                </svg>
+                <span class="stats-logo-text">Forrester</span>
+                <span class="stats-logo-text">Frost & Sullivan</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <div class="cta-inner">
+                    <h2 class="cta-title">
+                        Securing your digital environment at every layer.
+                    </h2>
+                    <p class="cta-description">
+                        Our cybersecurity programs and experts work 24/7/365 to prevent vulnerabilities and eradicate threats in your environment.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#demo" class="cta-button-primary">Request a Demo</a>
+                        <a href="#contact" class="cta-button-secondary">
+                            Talk to an Expert →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Section -->
+    <section class="partner-section">
+        <div class="partner-container">
+            <h2 class="partner-title">
+                Partnerships with all leading technologies that maximize the value of your current environment.
+            </h2>
+
+            <div class="partner-grid">
+                <!-- First Row -->
+                <div class="partner-row">
+                    <span class="partner-logo-text">DEVO</span>
+
+                    <svg class="partner-logo-item" height="45" viewBox="0 0 180 45" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="5" y="8" width="20" height="20" fill="#f25022"/>
+                        <rect x="27" y="8" width="20" height="20" fill="#7fba00"/>
+                        <rect x="5" y="30" width="20" height="20" fill="#00a4ef"/>
+                        <rect x="27" y="30" width="20" height="20" fill="#ffb900"/>
+                        <text x="55" y="35" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#5e5e5e">Microsoft</text>
+                    </svg>
+
+                    <span class="partner-logo-text">CROWDSTRIKE</span>
+
+                    <svg class="partner-logo-item" height="45" viewBox="0 0 140 45" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="32" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#000">splunk</text>
+                        <text x="105" y="32" font-size="32" font-weight="300" fill="#000">></text>
+                    </svg>
+
+                    <svg class="partner-logo-item" height="45" viewBox="0 0 160 45" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(0, 10)">
+                            <path d="M5,0 L0,8 L10,8 Z M15,0 L10,8 L20,8 Z M25,0 L20,8 L30,8 Z" fill="#ff6b00"/>
+                        </g>
+                        <text x="40" y="32" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#000">palo alto</text>
+                    </svg>
+
+                    <span class="partner-logo-text" style="color: #00d4ff;">LogRhythm</span>
+
+                    <svg class="partner-logo-item" height="45" viewBox="0 0 180 45" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="5" y="12" width="4" height="20" fill="#7933ff" rx="2"/>
+                        <rect x="12" y="12" width="4" height="20" fill="#7933ff" rx="2"/>
+                        <rect x="19" y="12" width="4" height="20" fill="#7933ff" rx="2"/>
+                        <text x="30" y="32" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#000">SentinelOne</text>
+                    </svg>
+
+                    <span class="partner-logo-text" style="color: #7cb342;">Rapid7</span>
+                </div>
+
+                <!-- Second Row -->
+                <div class="partner-row">
+                    <span class="partner-logo-text" style="opacity: 0.6;">Netskope</span>
+
+                    <svg class="partner-logo-item" height="45" viewBox="0 0 140 45" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5,15 L25,5 L25,35 L5,25 Z" fill="#0089d6"/>
+                        <path d="M25,5 L45,15 L45,35 L25,35 Z" fill="#0078d4"/>
+                        <text x="55" y="32" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600" fill="#0078d4">Azure</text>
+                    </svg>
+
+                    <svg class="partner-logo-item" height="45" viewBox="0 0 180 45" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="15" cy="22" r="10" fill="#ea4335"/>
+                        <circle cx="27" cy="22" r="10" fill="#fbbc04"/>
+                        <circle cx="39" cy="22" r="10" fill="#34a853"/>
+                        <circle cx="51" cy="22" r="10" fill="#4285f4"/>
+                        <text x="68" y="30" font-family="Google Sans, Arial, sans-serif" font-size="20" font-weight="500" fill="#5f6368">Google Cloud</text>
+                    </svg>
+
+                    <svg class="partner-logo-item" height="45" viewBox="0 0 100 45" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="30" font-family="Amazon Ember, Arial, sans-serif" font-size="32" font-weight="700" fill="#232f3e">aws</text>
+                        <path d="M15,35 Q50,40 85,35" stroke="#ff9900" stroke-width="3" fill="none"/>
+                    </svg>
+
+                    <svg class="partner-logo-item" height="45" viewBox="0 0 140 45" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="5" y="15" width="3" height="15" fill="#049fd9"/>
+                        <rect x="10" y="12" width="3" height="18" fill="#049fd9"/>
+                        <rect x="15" y="10" width="3" height="20" fill="#049fd9"/>
+                        <rect x="20" y="8" width="3" height="22" fill="#049fd9"/>
+                        <rect x="25" y="12" width="3" height="18" fill="#049fd9"/>
+                        <rect x="30" y="14" width="3" height="16" fill="#049fd9"/>
+                        <rect x="35" y="16" width="3" height="14" fill="#049fd9"/>
+                        <text x="48" y="28" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#000">CISCO</text>
+                    </svg>
+
+                    <svg class="partner-logo-item" height="45" viewBox="0 0 160 45" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="5" y="10" width="8" height="8" fill="#e00" rx="1"/>
+                        <rect x="15" y="10" width="8" height="8" fill="#e00" rx="1"/>
+                        <rect x="25" y="10" width="8" height="8" fill="#e00" rx="1"/>
+                        <text x="40" y="28" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#000">FORTINET</text>
+                    </svg>
+
+                    <svg class="partner-logo-item" height="45" viewBox="0 0 180 45" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="22" r="12" stroke="#000" stroke-width="2" fill="none"/>
+                        <path d="M18,10 L18,34 M10,22 L26,22" stroke="#000" stroke-width="2"/>
+                        <text x="40" y="30" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#000">cybereason</text>
+                    </svg>
+
+                    <svg class="partner-logo-item" height="45" viewBox="0 0 140 45" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="15" cy="22" r="10" fill="#88c540"/>
+                        <circle cx="15" cy="22" r="6" fill="#fff"/>
+                        <text x="32" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#000">CORTEX</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section class="tabs-section">
+        <div class="tabs-container">
+            <div class="tabs-content-wrapper">
+                <!-- Tabs Navigation -->
+                <div class="tabs-nav">
+                    <button class="tab-button" data-tab="tab1">Trustwave SpiderLabs</button>
+                    <button class="tab-button active" data-tab="tab2">Rapid Onboarding</button>
+                    <button class="tab-button" data-tab="tab3">How We Compare</button>
+                </div>
+
+                <!-- Tab 1: Trustwave SpiderLabs -->
+                <div id="tab1" class="tab-content">
+                    <div class="onboarding-content">
+                        <div class="onboarding-header">
+                            <h2 class="onboarding-title">Elite threat intelligence at your fingertips.</h2>
+                            <p class="onboarding-description">
+                                Access world-class research and threat intelligence from SpiderLabs, Trustwave's elite security research team with over 20 years of experience hunting threats.
+                            </p>
+                            <a href="#" class="onboarding-download">Learn More ↓</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Rapid Onboarding (Active by default) -->
+                <div id="tab2" class="tab-content active">
+                    <div class="onboarding-content">
+                        <div class="onboarding-header">
+                            <h2 class="onboarding-title">Onboard in days, not weeks.</h2>
+                            <p class="onboarding-description">
+                                Realize rapid time-to-value with Trustwave's proven onboarding approach that gets organizations up and running in days. Our nimble teams are ready to implement at your pace.
+                            </p>
+                            <a href="#" class="onboarding-download">Download eBook ↓</a>
+                        </div>
+
+                        <!-- Phases Timeline -->
+                        <div class="phases-wrapper">
+                            <div class="timeline-labels">
+                                <div class="timeline-label">Transition Management</div>
+                                <div class="timeline-label technical">Technical Enablement</div>
+                            </div>
+
+                            <div class="phases-timeline">
+                                <!-- Phase 1 -->
+                                <div class="phase-item">
+                                    <div class="phase-number">PHASE 1</div>
+                                    <div class="phase-icon-wrapper">
+                                        <svg class="phase-icon" viewBox="0 0 40 40">
+                                            <rect x="8" y="12" width="10" height="10" rx="2"/>
+                                            <rect x="22" y="12" width="10" height="10" rx="2"/>
+                                            <rect x="8" y="26" width="10" height="10" rx="2"/>
+                                            <line x1="18" y1="17" x2="22" y2="17"/>
+                                            <line x1="13" y1="22" x2="13" y2="26"/>
+                                        </svg>
+                                    </div>
+                                    <div class="phase-name">Mobilization &<br>Strategy</div>
+                                </div>
+
+                                <div class="phase-arrow"></div>
+
+                                <!-- Phase 2 -->
+                                <div class="phase-item">
+                                    <div class="phase-number">PHASE 2</div>
+                                    <div class="phase-icon-wrapper">
+                                        <svg class="phase-icon" viewBox="0 0 40 40">
+                                            <rect x="10" y="10" width="20" height="20" rx="2"/>
+                                            <line x1="14" y1="16" x2="26" y2="16"/>
+                                            <line x1="14" y1="20" x2="26" y2="20"/>
+                                            <line x1="14" y1="24" x2="22" y2="24"/>
+                                            <path d="M28 26 L32 30 L28 34"/>
+                                        </svg>
+                                    </div>
+                                    <div class="phase-name">Planning &<br>Design</div>
+                                </div>
+
+                                <div class="phase-arrow"></div>
+
+                                <!-- Phase 3 -->
+                                <div class="phase-item">
+                                    <div class="phase-number">PHASE 3</div>
+                                    <div class="phase-icon-wrapper">
+                                        <svg class="phase-icon" viewBox="0 0 40 40">
+                                            <circle cx="20" cy="20" r="12"/>
+                                            <line x1="20" y1="14" x2="20" y2="20"/>
+                                            <line x1="16" y1="18" x2="24" y2="18"/>
+                                            <line x1="16" y1="22" x2="24" y2="22"/>
+                                        </svg>
+                                    </div>
+                                    <div class="phase-name">Deployment &<br>Optimization</div>
+                                </div>
+
+                                <div class="phase-arrow"></div>
+
+                                <!-- Phase 4 -->
+                                <div class="phase-item technical">
+                                    <div class="phase-number">PHASE 4</div>
+                                    <div class="phase-icon-wrapper">
+                                        <svg class="phase-icon" viewBox="0 0 40 40">
+                                            <circle cx="20" cy="20" r="10"/>
+                                            <circle cx="20" cy="20" r="6"/>
+                                            <circle cx="20" cy="20" r="2"/>
+                                        </svg>
+                                    </div>
+                                    <div class="phase-name">Operational<br>Readiness</div>
+                                </div>
+
+                                <div class="phase-arrow"></div>
+
+                                <!-- Phase 5 -->
+                                <div class="phase-item technical">
+                                    <div class="phase-number">PHASE 5</div>
+                                    <div class="phase-icon-wrapper">
+                                        <svg class="phase-icon" viewBox="0 0 40 40">
+                                            <rect x="10" y="14" width="20" height="14" rx="2"/>
+                                            <line x1="14" y1="18" x2="26" y2="18"/>
+                                            <line x1="14" y1="22" x2="26" y2="22"/>
+                                            <polyline points="22,10 26,14 30,10"/>
+                                        </svg>
+                                    </div>
+                                    <div class="phase-name">Steady State<br>Operations</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: How We Compare -->
+                <div id="tab3" class="tab-content">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <div class="trustwave-logo-cell">
+                                        <div class="trustwave-mini-logo"></div>
+                                        <span>Trustwave</span>
+                                    </div>
+                                </th>
+                                <th>Security Software<br>Providers</th>
+                                <th>MDR<br>Providers</th>
+                                <th>Outsourcers/<br>Consultancies</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Highly differentiated IP for in-depth detection, investigation, and response</td>
+                                <td><div class="comparison-cell"><div class="check-full"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-empty"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-empty"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-empty"></div></div></td>
+                            </tr>
+                            <tr>
+                                <td>Unique threat intelligence infused throughout portfolio</td>
+                                <td><div class="comparison-cell"><div class="check-full"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-full"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-half"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-half"></div></div></td>
+                            </tr>
+                            <tr>
+                                <td>Behavior-based threat hunting to identify threats missed by leading security technologies</td>
+                                <td><div class="comparison-cell"><div class="check-full"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-full"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-empty"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-half"></div></div></td>
+                            </tr>
+                            <tr>
+                                <td>Heterogenous clients powered by a multi-tenant, highly scalable platform</td>
+                                <td><div class="comparison-cell"><div class="check-full"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-empty"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-half"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-half"></div></div></td>
+                            </tr>
+                            <tr>
+                                <td>Optimization for all major best-of-breed technologies</td>
+                                <td><div class="comparison-cell"><div class="check-full"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-empty"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-half"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-full"></div></div></td>
+                            </tr>
+                            <tr>
+                                <td>Rapid onboarding in days with proven methodology to de-risk transitions</td>
+                                <td><div class="comparison-cell"><div class="check-full"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-empty"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-empty"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-empty"></div></div></td>
+                            </tr>
+                            <tr>
+                                <td>End-to-end offensive and defensive security services</td>
+                                <td><div class="comparison-cell"><div class="check-full"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-empty"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-empty"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-full"></div></div></td>
+                            </tr>
+                            <tr>
+                                <td>The most analyst recognized provider in the industry</td>
+                                <td><div class="comparison-cell"><div class="check-full"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-empty"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-empty"></div></div></td>
+                                <td><div class="comparison-cell"><div class="check-empty"></div></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2 class="faq-title">FAQs</h2>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-question-text">What is a Managed Detection and Response service?</div>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Managed Detection and Response (MDR) is a cybersecurity service that combines technology and human expertise to perform threat hunting, monitoring, and response. The main benefit of MDR is that it helps rapidly identify and limit the impact of threats without the need for additional staffing.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-question-text">What are the benefits of an MDR service?</div>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            MDR services provide 24/7/365 threat detection and response, access to cybersecurity experts, advanced threat intelligence, faster incident response times, and reduced operational costs compared to building an in-house security operations center. It also helps organizations stay ahead of evolving threats with proactive threat hunting.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-question-text">I've got lots of security tools. Why do I need an MDR service?</div>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Security tools alone cannot protect your organization. They generate alerts that require expert analysis and response. MDR services provide the skilled analysts and proven processes to maximize your existing security investments, identifying threats that automated tools miss and responding before damage occurs.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-question-text">I'm using multiple cloud-based services and still have significant on-premises infrastructure. Can a single Managed Detection and Response service cover all of that?</div>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Yes. Trustwave MDR is designed to protect hybrid environments, providing unified visibility and threat detection across cloud, on-premises, and hybrid infrastructures. Our platform integrates with all major cloud providers (AWS, Azure, Google Cloud) and on-premises technologies to deliver comprehensive protection.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-question-text">I'm already spending a lot of money on cyber security. How can I cost-justify a Managed Detection and Response service on top of everything else?</div>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            MDR actually maximizes your existing security investments by ensuring tools are properly configured and monitored. The cost of a breach far exceeds MDR expenses - the average cost of a data breach is $4.45 million. MDR prevents breaches, reduces dwell time, and provides expertise without the overhead of hiring and training security staff.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-question-text">What are the key attributes to look for in a Managed Detection and Response provider? What questions should I ask prospective providers?</div>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Look for proven threat intelligence capabilities, 24/7/365 coverage, experience with your technology stack, transparent SLAs, rapid onboarding processes, and analyst expertise. Ask about their threat hunting methodology, mean time to detect/respond, technology integrations, and how they handle incident escalation and communication.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <div class="faq-question-text">How long will it take me to get started with a Managed Detection and Response provider?</div>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            With Trustwave, onboarding typically takes days, not weeks or months. Our proven methodology includes rapid deployment processes that get you protected quickly while minimizing disruption to your operations. The exact timeline depends on your environment's complexity and existing security infrastructure.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('mainHeader');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Feature card hover effects
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('click', function() {
+                // Toggle expanded state or navigate
+                console.log('Feature card clicked:', this.querySelector('.feature-card-title').textContent);
+            });
+        });
+
+        // Tabs functionality
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const targetTab = this.getAttribute('data-tab');
+
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                // Add active class to clicked button and corresponding content
+                this.classList.add('active');
+                document.getElementById(targetTab).classList.add('active');
+            });
+        });
+
+        // FAQ Accordion functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', function() {
+                // Toggle active class on clicked item
+                const isActive = item.classList.contains('active');
+
+                // Close all other items (optional - remove if you want multiple open)
+                faqItems.forEach(faqItem => {
+                    faqItem.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

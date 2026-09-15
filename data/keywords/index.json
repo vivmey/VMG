@@ -1,0 +1,13 @@
+[
+  { "id": "kw-001", "term": "voisins moulin galant", "slug": "voisins-moulin-galant", "volume": 0, "competition": 0, "priority": 1, "category": "identite" },
+  { "id": "kw-002", "term": "association corbeil-essonnes", "slug": "association-corbeil-essonnes", "volume": 0, "competition": 0, "priority": 1, "category": "identite" },
+  { "id": "kw-003", "term": "quartier moulin galant", "slug": "quartier-moulin-galant", "volume": 0, "competition": 0, "priority": 1, "category": "identite" },
+  { "id": "kw-004", "term": "aide alimentaire 91", "slug": "aide-alimentaire-91", "volume": 0, "competition": 0, "priority": 2, "category": "aide-alimentaire" },
+  { "id": "kw-005", "term": "friperie solidaire essonne", "slug": "friperie-solidaire-essonne", "volume": 0, "competition": 0, "priority": 2, "category": "friperie" },
+  { "id": "kw-006", "term": "pom chou pétition", "slug": "pom-chou-petition", "volume": 0, "competition": 0, "priority": 1, "category": "mobilisation" },
+  { "id": "kw-007", "term": "mobilisation corbeil", "slug": "mobilisation-corbeil", "volume": 0, "competition": 0, "priority": 2, "category": "mobilisation" },
+  { "id": "kw-008", "term": "chasse aux œufs corbeil-essonnes", "slug": "chasse-aux-oeufs-corbeil-essonnes", "volume": 0, "competition": 0, "priority": 3, "category": "evenements" },
+  { "id": "kw-009", "term": "fête de quartier moulin galant", "slug": "fete-de-quartier-moulin-galant", "volume": 0, "competition": 0, "priority": 3, "category": "evenements" },
+  { "id": "kw-010", "term": "bénévolat asso 91", "slug": "benevolat-asso-91", "volume": 0, "competition": 0, "priority": 2, "category": "vie-asso" },
+  { "id": "kw-011", "term": "assemblée générale asso quartier", "slug": "assemblee-generale-asso-quartier", "volume": 0, "competition": 0, "priority": 3, "category": "vie-asso" }
+]
