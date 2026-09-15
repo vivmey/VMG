@@ -34,16 +34,6 @@ function extractSlugFromFilename(filename: string): string {
   return basename.replace(/^\d{4}-\d{2}-\d{2}-/, '');
 }
 
-function normalizeFrontmatter(data: Record<string, unknown>): PostFrontmatter {
-  const fm = data as unknown as PostFrontmatter & { tags?: string[] };
-  return {
-    ...fm,
-    keywords: fm.keywords || fm.tags || [],
-    readingTime: fm.readingTime || 1,
-    draft: fm.draft ?? false,
-  } as PostFrontmatter;
-}
-
 async function getAllPostsFromMDX(locale: Locale = 'fr'): Promise<PostMeta[]> {
   const files = getMDXFiles(POSTS_DIR);
   const posts: PostMeta[] = [];
@@ -51,7 +41,7 @@ async function getAllPostsFromMDX(locale: Locale = 'fr'): Promise<PostMeta[]> {
   for (const file of files) {
     const content = fs.readFileSync(file, 'utf-8');
     const { data } = matter(content);
-    const frontmatter = normalizeFrontmatter(data);
+    const frontmatter = data as PostFrontmatter;
 
     if (frontmatter.draft) {
       continue;
@@ -69,7 +59,7 @@ async function getAllPostsFromMDX(locale: Locale = 'fr'): Promise<PostMeta[]> {
       author: frontmatter.author,
       category: frontmatter.category,
       readingTime: frontmatter.readingTime,
-      keywords: frontmatter.keywords,
+      keywords: frontmatter.keywords || [],
       image: frontmatter.image,
     });
   }
@@ -87,7 +77,7 @@ async function getPostBySlugFromMDX(slug: string, locale: Locale = 'fr'): Promis
     if (fileSlug === slug) {
       const fileContent = fs.readFileSync(file, 'utf-8');
       const { data, content } = matter(fileContent);
-      const frontmatter = normalizeFrontmatter(data);
+      const frontmatter = data as PostFrontmatter;
 
       if (frontmatter.language && frontmatter.language !== locale) {
         continue;

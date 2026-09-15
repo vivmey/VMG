@@ -7,11 +7,11 @@
  *
  * Phase 1 : statique. Phase 2 : bascule possible vers `merenza-cms` (Strapi multi-tenant, ADR 014).
  * Le flag `articlesSource: 'mdx' | 'strapi' | 'hybrid'` permet la bascule sans rewrite.
- * - `mdx` : 222 articles locaux uniquement (Phase 1, défaut).
+ * - `mdx` : 207 articles locaux uniquement (Phase 1, défaut).
  * - `strapi` : Strapi uniquement (Phase 2 bascule complète).
  * - `hybrid` : merge MDX + Strapi avec MDX prioritaire par slug (anti-régression 207 articles).
  *   Les nouveaux articles publiés dans Strapi apparaissent en tête de liste,
- *   les 222 MDX historiques restent figés et intacts.
+ *   les 207 MDX historiques restent figés et intacts.
  *
  * Convention pattern multi-brand (ADR 017 Axe A) :
  * un seul fichier `brand.config.ts` par partenaire. Pour le partenaire suivant,
@@ -171,8 +171,8 @@ export const brandConfig: BrandConfig = {
     tagline: 'Créer du lien et agir ensemble pour notre quartier',
     foundingYear: 2018,
     legalForm: 'Association loi 1901',
-    siret: '',
-    publicationDirector: '',
+    siret: 'TODO_SIRET',
+    publicationDirector: 'TODO_PRESIDENT',
   },
 
   site: {
@@ -475,7 +475,7 @@ export const brandConfig: BrandConfig = {
     keyFigures: [
       { value: '150+', label: 'familles soutenues' },
       { value: '12+', label: 'événements/an' },
-      { value: '222', label: 'articles publiés' },
+      { value: '207', label: 'articles publiés' },
       { value: '7+', label: "années d'action" },
     ],
   },

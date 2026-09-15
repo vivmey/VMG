@@ -23,7 +23,7 @@ import type { VmgCategory } from '../lib/types'
 
 const ROOT = path.resolve(__dirname, '..')
 const POSTS_DIR = path.join(ROOT, 'content', 'posts')
-const BLOGSPOT_FEED = 'https://voisinsmoulingalant.blogspot.com/feeds/posts/default?alt=json&max-results=50'
+const BLOGSPOT_FEED = 'https://veth91.blogspot.com/feeds/posts/default?alt=json&max-results=50'
 const AUTHOR = 'Voisins Moulin Galant'
 
 const VMG_CATEGORIES: VmgCategory[] = [

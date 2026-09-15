@@ -28,9 +28,8 @@ export default async function RGPDPage({ params }: Props) {
 
           <h2 className="text-[22px] font-serif text-navy mb-3 mt-8">Responsable de traitement</h2>
           <p className="text-[15px] text-body mb-6">
-            {templateConfig.brand.publicationDirector ? (
-              <>{templateConfig.brand.publicationDirector} — Président·e de l'association {templateConfig.brand.name}<br /></>
-            ) : null}
+            {templateConfig.brand.publicationDirector} — Président·e de l'association {templateConfig.brand.name}
+            <br />
             Email : {' '}
             <a href={`mailto:${templateConfig.contact.email}`} className="text-primary hover:underline">
               {templateConfig.contact.email}

@@ -22,7 +22,7 @@ export default async function MentionsLegalesPage({ params }: Props) {
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 lg:px-6 max-w-3xl prose prose-lg">
           <h2 className="text-[24px] font-serif text-navy mb-4">Éditeur du site</h2>
-                   <ul className="text-[15px] text-body space-y-1 mb-8 list-disc pl-5">
+          <ul className="text-[15px] text-body space-y-1 mb-8 list-disc pl-5">
             <li>
               <strong>Nom de l'association :</strong> {templateConfig.brand.name}
             </li>
@@ -35,17 +35,12 @@ export default async function MentionsLegalesPage({ params }: Props) {
             <li>
               <strong>Email :</strong> {templateConfig.contact.email}
             </li>
-            {templateConfig.brand.publicationDirector ? (
-              <li>
-                <strong>Directeur·rice de la publication :</strong>{' '}
-                {templateConfig.brand.publicationDirector}
-              </li>
-            ) : null}
-            {templateConfig.brand.siret ? (
-              <li>
-                <strong>SIRET :</strong> {templateConfig.brand.siret}
-              </li>
-            ) : null}
+            <li>
+              <strong>Directeur·rice de la publication :</strong> {templateConfig.brand.publicationDirector}
+            </li>
+            <li>
+              <strong>SIRET :</strong> {templateConfig.brand.siret}
+            </li>
           </ul>
 
           <h2 className="text-[24px] font-serif text-navy mb-4">Hébergement</h2>

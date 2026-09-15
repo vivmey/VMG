@@ -101,7 +101,7 @@ export const siteConfig: SiteConfig = {
   organization: {
     legalName: brandConfig.brand.name,
     legalForm: brandConfig.brand.legalForm,
-    siret: brandConfig.brand.siret || undefined,
+    siret: brandConfig.brand.siret === 'TODO_SIRET' ? undefined : brandConfig.brand.siret,
     address: {
       street: 'Quartier Moulin Galant',
       locality: brandConfig.contact.addressLocality,
