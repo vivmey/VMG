@@ -214,6 +214,7 @@ body {
   font-size: .75rem;
   font-weight: 600;
   display: inline-block;
+  align-self: flex-start;
 }
 
 .link-arrow {
@@ -274,4 +275,47 @@ body {
 .cta-white:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== Badge sizes ===== */
+.badge-sm {
+  font-size: 0.65rem;
+  padding: 0.2rem 0.6rem;
+}
+.badge-md {
+  font-size: 0.75rem;
+}
+
+/* ===== Article Cards ===== */
+.article-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.article-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+.article-card-content {
+  padding: 1rem 1.25rem 1.25rem;
+}
+.article-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1F3A5F;
+  line-height: 1.4;
+}
+.article-card-description {
+  font-size: 0.875rem;
+  color: #6B7280;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.article-card-meta {
+  font-size: 0.75rem;
+  color: #9CA3AF;
 }
