@@ -229,14 +229,20 @@ async function main() {
     const description = plainText.slice(0, 160).replace(/\n.*/s, '').trim() || title
 
     // Frontmatter
+    const wordCount = mdxContent.split(/s+/).filter(Boolean).length
+    const readingTime = Math.max(1, Math.round(wordCount / 200))
+
     const frontmatter = {
       title,
       description,
       publishedAt: publishedAt,
       author: AUTHOR,
       category,
-      tags: labels,
-      originalUrl: originalLink || undefined,
+      language: 'fr',
+      keywords: labels,
+      readingTime,
+      sourceBlog: 'voisinsmoulingalant',
+      sourceUrl: originalLink || undefined,
       draft: false,
     }
 
