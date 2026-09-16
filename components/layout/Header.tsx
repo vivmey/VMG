@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { ArrowRight, Menu, X } from 'lucide-react';
 import { templateConfig } from '@/template.config';
+import { usePathname } from 'next/navigation';
 
 type HeaderProps = {
   lang: string;
@@ -15,6 +16,8 @@ export default function Header({ lang }: HeaderProps) {
   const t = useTranslations('nav');
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isOpaque = scrolled || pathname !== `/${lang}`;
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -30,14 +33,14 @@ export default function Header({ lang }: HeaderProps) {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+        isOpaque ? 'bg-white shadow-lg' : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 lg:px-6">
         <div className="flex items-center justify-between h-[72px]">
           <Link href={`/${lang}`} className="flex items-center shrink-0" aria-label={templateConfig.brand.name}>
             <Image
-              src={scrolled ? templateConfig.assets.logoLight : templateConfig.assets.logoDark}
+              src={isOpaque ? templateConfig.assets.logoLight : templateConfig.assets.logoDark}
               alt={templateConfig.brand.name}
               width={180}
               height={56}
@@ -52,7 +55,7 @@ export default function Header({ lang }: HeaderProps) {
                 key={item.key}
                 href={item.href}
                 className={`flex items-center gap-1 px-4 py-2 text-[14px] font-medium transition-all rounded-lg ${
-                  scrolled
+                  isOpaque
                     ? 'text-gray-700 hover:text-navy hover:bg-gray-100'
                     : 'text-white/90 hover:text-white hover:bg-white/10'
                 }`}
@@ -76,7 +79,7 @@ export default function Header({ lang }: HeaderProps) {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Menu"
             className={`lg:hidden w-10 h-10 rounded-lg flex items-center justify-center ${
-              scrolled ? 'text-navy' : 'text-white'
+              isOpaque ? 'text-navy' : 'text-white'
             }`}
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
