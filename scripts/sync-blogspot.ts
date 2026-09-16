@@ -95,6 +95,20 @@ function extractBlogspotSlug(url: string): string {
   return ''
 }
 
+/**
+ * Extrait la première URL d'image dans le HTML Blogspot.
+ * Cherche d'abord dans les balises <img src>, puis dans les URLs de lien d'image.
+ */
+function extractFirstImageFromHtml(html: string): string | null {
+  // Balise <img src="...">
+  const imgTag = html.match(/<img[^>]+src=["'](https?:\/\/[^"']+)["']/)
+  if (imgTag) return imgTag[1]
+  // URL d'image dans un lien <a href="..."><img ...>
+  const linkImg = html.match(/href=["'](https?:\/\/[^"']+\.(?:jpg|jpeg|png|gif|webp)[^"']*)["']/)
+  if (linkImg) return linkImg[1]
+  return null
+}
+
 // ---------------------------------------------------------------------------
 // Collect existing slugs
 // ---------------------------------------------------------------------------
@@ -215,6 +229,9 @@ async function main() {
       continue
     }
 
+    // Extraction image depuis le HTML Blogspot (avant conversion Turndown)
+    const imageUrl = extractFirstImageFromHtml(htmlContent)
+
     // Conversion HTML → MDX
     const mdxContent = td.turndown(htmlContent).trim()
 
@@ -229,7 +246,7 @@ async function main() {
     const description = plainText.slice(0, 160).replace(/\n.*/s, '').trim() || title
 
     // Frontmatter
-    const wordCount = mdxContent.split(/s+/).filter(Boolean).length
+    const wordCount = mdxContent.split(/\s+/).filter(Boolean).length
     const readingTime = Math.max(1, Math.round(wordCount / 200))
 
     const frontmatter = {
@@ -241,6 +258,7 @@ async function main() {
       language: 'fr',
       keywords: labels,
       readingTime,
+      image: imageUrl || undefined,
       sourceBlog: 'voisinsmoulingalant',
       sourceUrl: originalLink || undefined,
       draft: false,
@@ -251,7 +269,7 @@ async function main() {
     const targetDir = path.join(POSTS_DIR, category)
     const targetPath = path.join(targetDir, filename)
 
-    console.log(`  [import] ${filename} (${category})`)
+    console.log(`  [import] ${filename} (${category})${imageUrl ? ' [img]' : ''}`)
 
     if (!dryRun) {
       await fs.mkdir(targetDir, { recursive: true })
