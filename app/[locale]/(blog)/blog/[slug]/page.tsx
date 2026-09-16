@@ -149,7 +149,7 @@ export default async function ArticlePage({ params }: PageProps) {
             </div>
 
             <footer className="mt-12 pt-8" style={{ borderTop: '1px solid rgba(31, 58, 95, 0.1)' }}>
-              {post.frontmatter.keywords.length > 0 && (
+              {(post.frontmatter.keywords ?? []).length > 0 && (
                 <>
                   <h3 className="text-lg font-semibold mb-4" style={{ color: '#1F3A5F' }}>Mots-clés</h3>
                   <div className="flex flex-wrap gap-2 mb-8">
